@@ -1,0 +1,1546 @@
+{
+  "schema_version": 1,
+  "title": "Ayaya OJ",
+  "categories": [
+    "入门与模拟",
+    "数组与双指针",
+    "链表",
+    "栈",
+    "队列",
+    "堆",
+    "树",
+    "图",
+    "排序与查找",
+    "哈希与集合",
+    "字符串",
+    "动态规划",
+    "贪心",
+    "搜索与回溯",
+    "并查集",
+    "数学与数论",
+    "区间数据结构"
+  ],
+  "problems": [
+    {
+      "schema_version": 1,
+      "id": "OJ-1001",
+      "title": "整数求和",
+      "category": "入门与模拟",
+      "tags": [
+        "输入输出",
+        "64 位整数"
+      ],
+      "difficulty": "入门",
+      "score": 15,
+      "statement": "给定两个整数，计算它们的和。",
+      "input_format": "一行两个整数 a b。",
+      "output_format": "输出 a+b。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 5\n",
+          "output": "8"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1002",
+      "title": "数字之和",
+      "category": "入门与模拟",
+      "tags": [
+        "字符串",
+        "模拟"
+      ],
+      "difficulty": "入门",
+      "score": 15,
+      "statement": "计算一个非负十进制整数的各位数字之和。整数可能很长，且可能含前导零。",
+      "input_format": "一行数字字符串，长度 1 至 100000。",
+      "output_format": "输出各位数字之和。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "20904\n",
+          "output": "15"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1003",
+      "title": "螺旋填数",
+      "category": "入门与模拟",
+      "tags": [
+        "矩阵",
+        "模拟"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "从 1 开始填充 n×n 矩阵。从左上角向右出发，按顺时针螺旋依次填数。",
+      "input_format": "一个整数 n，1≤n≤100。",
+      "output_format": "输出 n 行，每行 n 个整数，以空格分隔。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3",
+          "output": "1 2 3\n8 9 4\n7 6 5"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1004",
+      "title": "数组循环右移",
+      "category": "数组与双指针",
+      "tags": [
+        "数组",
+        "取模"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "将数组中的元素整体循环向右移动 k 个位置。",
+      "input_format": "首行 n k；次行 n 个整数。1≤n≤100000，0≤k≤10^9。",
+      "output_format": "输出移动后的数组。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5 2\n1 2 3 4 5",
+          "output": "4 5 1 2 3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1005",
+      "title": "合并有序序列",
+      "category": "数组与双指针",
+      "tags": [
+        "双指针",
+        "归并"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "将两个非降序整数序列合并为一个非降序序列，保留重复元素。",
+      "input_format": "首行 n m，第二行 n 个整数，第三行 m 个整数。0≤n,m≤100000。",
+      "output_format": "输出合并后的序列；两序列都为空时输出空行。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 3\n1 3 5\n2 3 8",
+          "output": "1 2 3 3 5 8"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1006",
+      "title": "定长窗口最大和",
+      "category": "数组与双指针",
+      "tags": [
+        "滑动窗口"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "求数组中所有长度恰为 k 的连续片段的元素和的最大值。",
+      "input_format": "首行 n k，次行 n 个整数。1≤k≤n≤100000。",
+      "output_format": "输出最大和。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5 3\n-2 5 -1 4 -3",
+          "output": "8"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1007",
+      "title": "单链表反转",
+      "category": "链表",
+      "tags": [
+        "指针",
+        "线性表"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "反转从 head 开始的单链表，并按反转后的链序输出结点值。",
+      "input_format": "首行 n head，随后 n 行，每行是结点编号 id、整数值 value、后继编号 next。-1 表示空指针。id 为 0 至 n-1，结点输入顺序任意；从 head 可达的链无环，可能存在不可达结点。\n0≤n≤100000。",
+      "output_format": "输出反转后的值序列，空链输出空行。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 0\n0 2 1\n1 7 2\n2 4 -1\n",
+          "output": "4 7 2"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1008",
+      "title": "链表倒数第 k 项",
+      "category": "链表",
+      "tags": [
+        "快慢指针"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "寻找从 head 开始的链中倒数第 k 个结点，倒数第一项为尾结点。",
+      "input_format": "首行 n head，随后 n 行，每行是结点编号 id、整数值 value、后继编号 next。-1 表示空指针。id 为 0 至 n-1，结点输入顺序任意；从 head 可达的链无环，可能存在不可达结点。\n最后一行是 k，1≤k≤100000。",
+      "output_format": "存在则输出结点值，否则输出 NONE。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 0\n0 3 1\n1 6 2\n2 9 -1\n2\n",
+          "output": "6"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1009",
+      "title": "有序链表去重",
+      "category": "链表",
+      "tags": [
+        "去重",
+        "指针"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "从非降序单链表中删除重复值，使每种值只保留第一个结点。",
+      "input_format": "首行 n head，随后 n 行，每行是结点编号 id、整数值 value、后继编号 next。-1 表示空指针。id 为 0 至 n-1，结点输入顺序任意；从 head 可达的链无环，可能存在不可达结点。\n可达链上的值非降序，0≤n≤100000。",
+      "output_format": "输出去重后的结点值序列，空链输出空行。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5 0\n0 1 1\n1 1 2\n2 2 3\n3 4 4\n4 4 -1\n",
+          "output": "1 2 4"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1010",
+      "title": "括号匹配",
+      "category": "栈",
+      "tags": [
+        "栈",
+        "匹配"
+      ],
+      "difficulty": "入门",
+      "score": 15,
+      "statement": "判断仅由 ()[]{} 组成的字符串是否正确嵌套。空串视为匹配。",
+      "input_format": "一行括号字符串，长度 0 至 100000。",
+      "output_format": "匹配输出 YES，否则输出 NO。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "{[()()]}",
+          "output": "YES"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 6
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1011",
+      "title": "后缀表达式求值",
+      "category": "栈",
+      "tags": [
+        "表达式",
+        "栈"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "计算合法后缀表达式。操作数为整数，运算符仅有 +、-、*，所有结果在 64 位有符号整数内。",
+      "input_format": "一行以空格分隔的表达式，至多 10000 个 token。",
+      "output_format": "输出表达式值。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 4 + 2 *",
+          "output": "14"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1012",
+      "title": "右侧第一个更大值",
+      "category": "栈",
+      "tags": [
+        "单调栈"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "对每个元素，寻找它右侧第一个严格大于它的元素。",
+      "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+      "output_format": "输出 n 个对应值；不存在时输出 -1。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5\n2 1 3 2 4",
+          "output": "3 3 4 4 -1"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1013",
+      "title": "队列操作模拟",
+      "category": "队列",
+      "tags": [
+        "FIFO",
+        "模拟"
+      ],
+      "difficulty": "入门",
+      "score": 15,
+      "statement": "维护一个初始为空的先进先出队列。push x 入队；pop 删除并输出队首；front 仅输出队首。空队上的 pop/front 输出 EMPTY。",
+      "input_format": "首行 q，随后 q 行操作，1≤q≤100000。",
+      "output_format": "对每次 pop 或 front 操作输出一行结果。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5\npush 3\npush 8\nfront\npop\nfront",
+          "output": "3\n3\n8"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1014",
+      "title": "约瑟夫环",
+      "category": "队列",
+      "tags": [
+        "循环队列"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "n 个人编号 1 至 n 围成一圈。从 1 开始报数，每数到第 k 人就移出，从下一人重新从 1 报数，直到全部移出。",
+      "input_format": "一行 n k，1≤n,k≤1000。",
+      "output_format": "输出移出顺序。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5 2",
+          "output": "2 4 1 5 3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1015",
+      "title": "滑动窗口最大值",
+      "category": "队列",
+      "tags": [
+        "单调队列"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "窗口从数组左端向右移动，每次移动一个位置，输出每个长度为 k 的窗口内最大值。",
+      "input_format": "首行 n k，次行 n 个整数，1≤k≤n≤100000。",
+      "output_format": "输出 n-k+1 个最大值。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "8 3\n1 3 -1 -3 5 3 6 7",
+          "output": "3 3 5 5 6 7"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1016",
+      "title": "最小堆操作",
+      "category": "堆",
+      "tags": [
+        "优先队列"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "维护初始为空的最小堆。push x 插入；pop 删除并输出最小值；top 输出最小值。堆空时 pop/top 输出 EMPTY。",
+      "input_format": "首行 q，随后 q 行操作，1≤q≤100000。",
+      "output_format": "每次 pop/top 输出一行。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "6\npush 4\npush 1\ntop\npop\npop\npop",
+          "output": "1\n1\n4\nEMPTY"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1017",
+      "title": "第 k 大元素",
+      "category": "堆",
+      "tags": [
+        "Top K",
+        "堆"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "求数组按非增序排列后的第 k 个元素，重复值分别计数。",
+      "input_format": "首行 n k，次行 n 个整数，1≤k≤n≤100000。",
+      "output_format": "输出第 k 大值。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "6 2\n3 2 1 5 6 4",
+          "output": "5"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1018",
+      "title": "最优合并代价",
+      "category": "堆",
+      "tags": [
+        "Huffman",
+        "贪心"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "每次可以选取两个文件合并，代价为二者长度之和；新文件长度等于该和。求将全部文件合为一个文件的最小总代价。",
+      "input_format": "首行 n，次行 n 个非负长度。1≤n≤100000，长度≤10^9。",
+      "output_format": "输出最小总代价。只有一个文件时为 0。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4\n1 2 3 4",
+          "output": "19"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1019",
+      "title": "二叉树三种遍历",
+      "category": "树",
+      "tags": [
+        "二叉树",
+        "遍历"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "给定二叉树，分别输出先序、中序和后序遍历的结点编号。",
+      "input_format": "首行 n root，随后 n 行，每行 id left right。编号为 1 至 n，0 表示空孩子；所有结点构成一棵合法二叉树。n=0 时 root=0。0≤n≤100000。",
+      "output_format": "按先序、中序、后序顺序输出三行；空树输出三个空行。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 1\n1 2 3\n2 0 0\n3 0 0",
+          "output": "1 2 3\n2 1 3\n2 3 1"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1020",
+      "title": "二叉树高度",
+      "category": "树",
+      "tags": [
+        "层序遍历",
+        "二叉树"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "树的高度定义为根到最深叶子路径上的结点数。求给定二叉树的高度，空树高度为 0。",
+      "input_format": "首行 n root，随后 n 行，每行 id left right。编号为 1 至 n，0 表示空孩子；所有结点构成一棵合法二叉树。n=0 时 root=0。0≤n≤100000。",
+      "output_format": "输出树高。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 1\n1 2 0\n2 0 3\n3 0 0",
+          "output": "3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1021",
+      "title": "重建二叉树",
+      "category": "树",
+      "tags": [
+        "二叉树",
+        "分治"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "结点编号互不相同，给出一棵二叉树的先序和中序遍历，求其后序遍历。保证输入合法。",
+      "input_format": "首行 n；次行先序序列；第三行中序序列。1≤n≤100000。",
+      "output_format": "输出后序序列。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5\n1 2 4 5 3\n4 2 5 1 3",
+          "output": "4 5 2 3 1"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1022",
+      "title": "无向图连通分量",
+      "category": "图",
+      "tags": [
+        "DFS / BFS",
+        "连通性"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "求无向图中连通分量的个数。孤立顶点各自构成一个分量，允许重边和自环。",
+      "input_format": "首行 n m，随后 m 行 u v。1≤n≤100000，0≤m≤200000；编号为 1 至 n。",
+      "output_format": "输出分量个数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5 3\n1 2\n2 3\n4 5",
+          "output": "2"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1023",
+      "title": "非负权最短路",
+      "category": "图",
+      "tags": [
+        "Dijkstra",
+        "最短路"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "在有向非负权图中，求起点 s 到所有顶点的最短距离。允许重边和自环。",
+      "input_format": "首行 n m s，随后 m 行 u v w，表示有向边。1≤n≤100000，0≤m≤200000，0≤w≤10^9。",
+      "output_format": "按顶点编号输出距离，不可达输出 -1。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4 4 1\n1 2 2\n1 3 7\n2 3 1\n3 4 3",
+          "output": "0 2 3 6"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1024",
+      "title": "字典序拓扑排序",
+      "category": "图",
+      "tags": [
+        "DAG",
+        "入度",
+        "优先队列"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "求有向图字典序最小的拓扑序。每次有多个入度为零的顶点时优先选择编号最小者。",
+      "input_format": "首行 n m，随后 m 行 u v，表示 u 必须先于 v。1≤n≤100000，0≤m≤200000。",
+      "output_format": "存在则输出拓扑序；有环输出 IMPOSSIBLE。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4 3\n1 3\n2 3\n3 4",
+          "output": "1 2 3 4"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1025",
+      "title": "整数排序",
+      "category": "排序与查找",
+      "tags": [
+        "排序"
+      ],
+      "difficulty": "入门",
+      "score": 15,
+      "statement": "将给定整数序列按非降序排序。",
+      "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+      "output_format": "输出排序后的序列。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5\n3 -1 2 3 0",
+          "output": "-1 0 2 3 3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1026",
+      "title": "二分查找边界",
+      "category": "排序与查找",
+      "tags": [
+        "二分",
+        "lower_bound"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "对每个查询 x，在非降序数组中寻找第一个大于等于 x 的元素位置。下标从 1 开始，不存在时返回 n+1。",
+      "input_format": "首行 n q；次行 n 个已排序整数；第三行 q 个查询值。1≤n,q≤100000。",
+      "output_format": "每个查询输出一行位置。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5 3\n1 2 2 4 7\n2 3 8",
+          "output": "2\n4\n6"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1027",
+      "title": "逆序对计数",
+      "category": "排序与查找",
+      "tags": [
+        "归并排序",
+        "树状数组"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "统计序列中满足 i<j 且 a[i]>a[j] 的下标对数量。相等元素不构成逆序对。",
+      "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+      "output_format": "输出逆序对个数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5\n3 1 2 5 4",
+          "output": "3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1028",
+      "title": "整数频次统计",
+      "category": "哈希与集合",
+      "tags": [
+        "哈希表",
+        "计数"
+      ],
+      "difficulty": "入门",
+      "score": 15,
+      "statement": "统计每个不同整数的出现次数，并按数值从小到大输出。",
+      "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+      "output_format": "每行输出一个整数及其出现次数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "6\n2 1 2 -1 1 2",
+          "output": "-1 1\n1 2\n2 3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1029",
+      "title": "两数之和判定",
+      "category": "哈希与集合",
+      "tags": [
+        "哈希表",
+        "去重"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "判断数组中是否存在两个不同下标，使对应值之和等于 target。允许两元素值相等。",
+      "input_format": "首行 n target，次行 n 个整数。1≤n≤100000。",
+      "output_format": "存在输出 YES，否则输出 NO。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4 8\n3 5 1 7",
+          "output": "YES"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1030",
+      "title": "最长连续整数段",
+      "category": "哈希与集合",
+      "tags": [
+        "集合",
+        "线性复杂度"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "忽略输入顺序和重复值，求由连续整数构成的最长段长度。例如 1、2、3 构成长为 3 的一段。",
+      "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+      "output_format": "输出最长长度。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "6\n100 4 200 1 3 2",
+          "output": "4"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1031",
+      "title": "回文串判断",
+      "category": "字符串",
+      "tags": [
+        "双指针"
+      ],
+      "difficulty": "入门",
+      "score": 15,
+      "statement": "判断给定字符串是否与逆序完全一致，区分大小写。空串为回文串。",
+      "input_format": "一行仅含英文字母或数字的字符串，长度 0 至 100000。",
+      "output_format": "回文输出 YES，否则输出 NO。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "abccba",
+          "output": "YES"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 6
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1032",
+      "title": "模式串出现次数",
+      "category": "字符串",
+      "tags": [
+        "KMP",
+        "前缀函数"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "统计模式串在文本中出现的次数，允许匹配区间重叠。",
+      "input_format": "第一行文本，第二行非空模式串；均仅含小写字母，各长度不超过 100000。文本可为空。",
+      "output_format": "输出匹配次数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "aaaaa\naaa",
+          "output": "3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 6
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1033",
+      "title": "最长无重复子串",
+      "category": "字符串",
+      "tags": [
+        "滑动窗口",
+        "哈希表"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "求不含重复字符的最长连续子串长度。",
+      "input_format": "一行仅含英文字母和数字的字符串，长度 0 至 100000。",
+      "output_format": "输出最大长度。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "abcabcbb",
+          "output": "3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 6
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1034",
+      "title": "最大连续子段和",
+      "category": "动态规划",
+      "tags": [
+        "Kadane",
+        "状态转移"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "从非空数组中选择一个非空连续片段，使元素和最大。",
+      "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+      "output_format": "输出最大子段和。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "9\n-2 1 -3 4 -1 2 1 -5 4",
+          "output": "6"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1035",
+      "title": "最长严格递增子序列",
+      "category": "动态规划",
+      "tags": [
+        "LIS",
+        "二分"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "从数组中选择若干元素，保持相对顺序，使其严格递增。求最长可选长度。所选元素不必连续。",
+      "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+      "output_format": "输出最长长度。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "8\n10 9 2 5 3 7 101 18",
+          "output": "4"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1036",
+      "title": "01 背包",
+      "category": "动态规划",
+      "tags": [
+        "背包",
+        "滚动数组"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "每件物品至多选一次，总重量不得超过容量 W，求可获得的最大总价值。允许不选任何物品。",
+      "input_format": "首行 n W，随后 n 行重量 w 与价值 v。1≤n≤200，0≤W≤10000，1≤w≤10000，0≤v≤10^6。",
+      "output_format": "输出最大价值。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 5\n2 3\n3 4\n4 5",
+          "output": "7"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1037",
+      "title": "最多兼容活动",
+      "category": "贪心",
+      "tags": [
+        "区间调度"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "活动占用半开区间 [start,end)。同一时刻只能参加一个活动，求最多能参加多少个活动。一个活动结束时可以立即开始下一个。",
+      "input_format": "首行 n，随后 n 行 start end，0≤n≤100000，0≤start<end≤10^9。",
+      "output_format": "输出可参加活动数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4\n1 3\n2 4\n3 5\n5 6",
+          "output": "3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1038",
+      "title": "合并重叠区间",
+      "category": "贪心",
+      "tags": [
+        "区间",
+        "排序"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "将所有有交集的闭区间合并。同端点相接也算重叠。",
+      "input_format": "首行 n，随后 n 行 left right，0≤n≤100000，left≤right。",
+      "output_format": "首行输出合并后的区间数，随后按左端点升序逐行输出区间。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4\n1 3\n2 6\n8 10\n10 12",
+          "output": "2\n1 6\n8 12"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1039",
+      "title": "最少跳跃次数",
+      "category": "贪心",
+      "tags": [
+        "区间扩展"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "从数组下标 0 出发。a[i] 表示从 i 最多向右跳多少格，求到达最后一格的最少跳数。",
+      "input_format": "首行 n，次行 n 个非负整数。1≤n≤100000，a[i]≤100000。",
+      "output_format": "输出最少跳数；无法到达输出 -1；起点就是终点时输出 0。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5\n2 3 1 1 4",
+          "output": "2"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1040",
+      "title": "子集和判定",
+      "category": "搜索与回溯",
+      "tags": [
+        "折半搜索",
+        "DFS"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "从整数数组中选择任意若干元素，判断它们的和能否恰好等于 target。每个下标最多选择一次，允许空集。",
+      "input_format": "首行 n target，次行 n 个整数。0≤n≤24。",
+      "output_format": "可以输出 YES，否则输出 NO。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4 9\n3 4 5 7",
+          "output": "YES"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1041",
+      "title": "N 皇后方案数",
+      "category": "搜索与回溯",
+      "tags": [
+        "回溯",
+        "位运算"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "在 n×n 棋盘放置 n 个皇后，使任意两个皇后不同行、同列且不在同一条对角线上。求不同布局数。",
+      "input_format": "一个整数 n，1≤n≤11。",
+      "output_format": "输出方案数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4",
+          "output": "2"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 6
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1042",
+      "title": "网格中的岛屿",
+      "category": "搜索与回溯",
+      "tags": [
+        "DFS",
+        "BFS",
+        "洪水填充"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "网格中 1 为陆地、0 为水。仅上下左右相邻的陆地连通，求岛屿数量。",
+      "input_format": "首行 n m，随后 n 行，每行 m 个 0/1 字符，不含空格。1≤n,m≤500。",
+      "output_format": "输出岛屿数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 4\n1100\n0101\n0001",
+          "output": "2"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1043",
+      "title": "动态连通性",
+      "category": "并查集",
+      "tags": [
+        "路径压缩",
+        "按大小合并"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "维护 n 个元素的集合。U a b 合并 a、b 所在集合；Q a b 查询它们是否属于同一集合。",
+      "input_format": "首行 n q，随后 q 行操作。1≤n,q≤100000，元素编号 1 至 n。",
+      "output_format": "每次查询输出 YES 或 NO。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4 4\nU 1 2\nQ 1 2\nQ 1 3\nQ 3 3",
+          "output": "YES\nNO\nYES"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1044",
+      "title": "冗余连边计数",
+      "category": "并查集",
+      "tags": [
+        "判环",
+        "连通性"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "按给定顺序逐条加入无向边。如果加入前两个端点已经连通，则这条边为冗余边。统计冗余边总数。自环也计为冗余边。",
+      "input_format": "首行 n m，随后 m 行 u v。1≤n≤100000，0≤m≤200000。",
+      "output_format": "输出冗余边数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "3 4\n1 2\n2 3\n1 3\n2 2",
+          "output": "2"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1045",
+      "title": "最小生成树",
+      "category": "并查集",
+      "tags": [
+        "Kruskal",
+        "图",
+        "贪心"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "给定无向加权图，求连接全部顶点的最小生成树权重和。边权可以为负，允许重边和自环。",
+      "input_format": "首行 n m，随后 m 行 u v w。1≤n≤100000，0≤m≤200000，|w|≤10^9。",
+      "output_format": "存在生成树则输出总权重，否则输出 IMPOSSIBLE。单顶点无边的权重为 0。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4 5\n1 2 1\n2 3 2\n3 4 3\n1 4 9\n1 3 5",
+          "output": "6"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1046",
+      "title": "最大公约数与最小公倍数",
+      "category": "数学与数论",
+      "tags": [
+        "Euclid",
+        "64 位整数"
+      ],
+      "difficulty": "入门",
+      "score": 15,
+      "statement": "求两个非负整数的最大公约数和最小公倍数。约定任一数为 0 时最小公倍数为 0，gcd(0,0)=0。",
+      "input_format": "一行 a b，0≤a,b≤10^9。",
+      "output_format": "输出 gcd 和 lcm，以空格分隔。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "12 18",
+          "output": "6 36"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1047",
+      "title": "区间内素数个数",
+      "category": "数学与数论",
+      "tags": [
+        "埃氏筛"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "统计整数区间 [2,n] 中的素数个数。",
+      "input_format": "一个整数 n，0≤n≤1000000。",
+      "output_format": "输出素数个数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "10",
+          "output": "4"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 6
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1048",
+      "title": "快速幂取模",
+      "category": "数学与数论",
+      "tags": [
+        "二进制",
+        "模运算"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "计算 a 的 b 次幂对 m 取模的结果，不得先计算完整大整数幂。约定 0^0=1。",
+      "input_format": "一行 a b m，0≤a≤10^9，0≤b≤10^18，1≤m≤10^9。",
+      "output_format": "输出余数。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "2 10 1000",
+          "output": "24"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1049",
+      "title": "静态区间求和",
+      "category": "区间数据结构",
+      "tags": [
+        "前缀和"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "多次查询数组闭区间 [l,r] 的元素和，数组在查询期间不会修改。",
+      "input_format": "首行 n q，次行 n 个整数，随后 q 行 l r。1≤n,q≤100000，1≤l≤r≤n。",
+      "output_format": "每个查询输出一行和。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5 3\n1 2 3 4 5\n1 3\n2 5\n3 3",
+          "output": "6\n14\n3"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1050",
+      "title": "单点增加与区间求和",
+      "category": "区间数据结构",
+      "tags": [
+        "Fenwick Tree",
+        "树状数组"
+      ],
+      "difficulty": "进阶",
+      "score": 25,
+      "statement": "维护整数数组。add i x 将第 i 项增加 x；sum l r 查询闭区间和。下标从 1 开始。",
+      "input_format": "首行 n q；次行初始数组；随后 q 行操作。1≤n,q≤100000，查询满足 1≤l≤r≤n。",
+      "output_format": "每次 sum 输出一行结果。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "4 3\n1 2 3 4\nsum 1 4\nadd 2 5\nsum 2 3",
+          "output": "10\n10"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 4
+    },
+    {
+      "schema_version": 1,
+      "id": "OJ-1051",
+      "title": "区间增加后的数组",
+      "category": "区间数据结构",
+      "tags": [
+        "差分数组",
+        "前缀和"
+      ],
+      "difficulty": "基础",
+      "score": 20,
+      "statement": "给定初始数组，依次执行多次区间增加操作，最后输出完整数组。操作将闭区间 [l,r] 的每个数增加 x。",
+      "input_format": "首行 n q，次行 n 个整数，随后 q 行 l r x。1≤n≤100000，0≤q≤100000，1≤l≤r≤n。",
+      "output_format": "输出最终数组。",
+      "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+      "samples": [
+        {
+          "input": "5 2\n1 2 3 4 5\n1 3 2\n2 5 -1",
+          "output": "3 3 4 3 4"
+        }
+      ],
+      "time_limit_ms": 2000,
+      "memory_limit_mb": 256,
+      "comparator": "tokens",
+      "source": "经典算法 · 原创练习",
+      "source_url": "",
+      "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+      "editorial": "",
+      "test_count": 5
+    }
+  ]
+}

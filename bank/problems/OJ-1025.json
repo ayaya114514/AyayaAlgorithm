@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1025",
+  "title": "整数排序",
+  "category": "排序与查找",
+  "tags": [
+    "排序"
+  ],
+  "difficulty": "入门",
+  "score": 15,
+  "statement": "将给定整数序列按非降序排序。",
+  "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+  "output_format": "输出排序后的序列。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "5\n3 -1 2 3 0",
+      "output": "-1 0 2 3 3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "5\n3 -1 2 3 0",
+      "output": "-1 0 2 3 3"
+    },
+    {
+      "input": "1\n1\n",
+      "output": "1"
+    },
+    {
+      "input": "5\n5 4 3 2 1\n",
+      "output": "1 2 3 4 5"
+    },
+    {
+      "input": "15\n2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n",
+      "output": "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2"
+    },
+    {
+      "input": "3\n-9 0 9\n",
+      "output": "-9 0 9"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

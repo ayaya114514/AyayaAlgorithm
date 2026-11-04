@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1005",
+  "title": "合并有序序列",
+  "category": "数组与双指针",
+  "tags": [
+    "双指针",
+    "归并"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "将两个非降序整数序列合并为一个非降序序列，保留重复元素。",
+  "input_format": "首行 n m，第二行 n 个整数，第三行 m 个整数。0≤n,m≤100000。",
+  "output_format": "输出合并后的序列；两序列都为空时输出空行。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 3\n1 3 5\n2 3 8",
+      "output": "1 2 3 3 5 8"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 3\n1 3 5\n2 3 8",
+      "output": "1 2 3 3 5 8"
+    },
+    {
+      "input": "0 0\n\n",
+      "output": ""
+    },
+    {
+      "input": "0 2\n\n-1 3",
+      "output": "-1 3"
+    },
+    {
+      "input": "2 0\n-2 -1\n",
+      "output": "-2 -1"
+    },
+    {
+      "input": "3 3\n1 1 1\n1 1 1",
+      "output": "1 1 1 1 1 1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

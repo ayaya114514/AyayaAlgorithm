@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1016",
+  "title": "最小堆操作",
+  "category": "堆",
+  "tags": [
+    "优先队列"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "维护初始为空的最小堆。push x 插入；pop 删除并输出最小值；top 输出最小值。堆空时 pop/top 输出 EMPTY。",
+  "input_format": "首行 q，随后 q 行操作，1≤q≤100000。",
+  "output_format": "每次 pop/top 输出一行。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "6\npush 4\npush 1\ntop\npop\npop\npop",
+      "output": "1\n1\n4\nEMPTY"
+    }
+  ],
+  "tests": [
+    {
+      "input": "6\npush 4\npush 1\ntop\npop\npop\npop",
+      "output": "1\n1\n4\nEMPTY"
+    },
+    {
+      "input": "1\npop",
+      "output": "EMPTY"
+    },
+    {
+      "input": "4\npush -1\npush -1\npop\ntop",
+      "output": "-1\n-1"
+    },
+    {
+      "input": "1\npush 9",
+      "output": ""
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1028",
+  "title": "整数频次统计",
+  "category": "哈希与集合",
+  "tags": [
+    "哈希表",
+    "计数"
+  ],
+  "difficulty": "入门",
+  "score": 15,
+  "statement": "统计每个不同整数的出现次数，并按数值从小到大输出。",
+  "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+  "output_format": "每行输出一个整数及其出现次数。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "6\n2 1 2 -1 1 2",
+      "output": "-1 1\n1 2\n2 3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "6\n2 1 2 -1 1 2",
+      "output": "-1 1\n1 2\n2 3"
+    },
+    {
+      "input": "1\n0\n",
+      "output": "0 1"
+    },
+    {
+      "input": "10\n-2 -2 -2 -2 -2 -2 -2 -2 -2 -2\n",
+      "output": "-2 10"
+    },
+    {
+      "input": "3\n3 2 1\n",
+      "output": "1 1\n2 1\n3 1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

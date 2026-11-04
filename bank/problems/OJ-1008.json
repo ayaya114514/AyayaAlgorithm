@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1008",
+  "title": "链表倒数第 k 项",
+  "category": "链表",
+  "tags": [
+    "快慢指针"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "寻找从 head 开始的链中倒数第 k 个结点，倒数第一项为尾结点。",
+  "input_format": "首行 n head，随后 n 行，每行是结点编号 id、整数值 value、后继编号 next。-1 表示空指针。id 为 0 至 n-1，结点输入顺序任意；从 head 可达的链无环，可能存在不可达结点。\n最后一行是 k，1≤k≤100000。",
+  "output_format": "存在则输出结点值，否则输出 NONE。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 0\n0 3 1\n1 6 2\n2 9 -1\n2\n",
+      "output": "6"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 0\n0 3 1\n1 6 2\n2 9 -1\n2\n",
+      "output": "6"
+    },
+    {
+      "input": "0 -1\n1",
+      "output": "NONE"
+    },
+    {
+      "input": "1 0\n0 1 -1\n1",
+      "output": "1"
+    },
+    {
+      "input": "2 0\n0 1 1\n1 2 -1\n3",
+      "output": "NONE"
+    },
+    {
+      "input": "3 0\n0 1 1\n1 2 2\n2 3 -1\n3",
+      "output": "1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

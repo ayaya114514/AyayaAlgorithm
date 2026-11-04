@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1045",
+  "title": "最小生成树",
+  "category": "并查集",
+  "tags": [
+    "Kruskal",
+    "图",
+    "贪心"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "给定无向加权图，求连接全部顶点的最小生成树权重和。边权可以为负，允许重边和自环。",
+  "input_format": "首行 n m，随后 m 行 u v w。1≤n≤100000，0≤m≤200000，|w|≤10^9。",
+  "output_format": "存在生成树则输出总权重，否则输出 IMPOSSIBLE。单顶点无边的权重为 0。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 5\n1 2 1\n2 3 2\n3 4 3\n1 4 9\n1 3 5",
+      "output": "6"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 5\n1 2 1\n2 3 2\n3 4 3\n1 4 9\n1 3 5",
+      "output": "6"
+    },
+    {
+      "input": "1 0",
+      "output": "0"
+    },
+    {
+      "input": "3 1\n1 2 1",
+      "output": "IMPOSSIBLE"
+    },
+    {
+      "input": "2 2\n1 2 -7\n1 2 3",
+      "output": "-7"
+    },
+    {
+      "input": "2 2\n1 1 -99\n1 2 4",
+      "output": "4"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

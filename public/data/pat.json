@@ -1,0 +1,3480 @@
+{
+  "updated_at": "2026-11-04",
+  "source": "https://pintia.cn/problem-sets/dashboard",
+  "description": "PAT 官方公开目录，仅收录题号、标题、分数和原站链接；不包含题面或官方测试数据。",
+  "problems": [
+    {
+      "id": "PAT-B1001",
+      "level": "B",
+      "label": "1001",
+      "title": "害死人不偿命的(3n+1)猜想",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805325918486528"
+    },
+    {
+      "id": "PAT-B1002",
+      "level": "B",
+      "label": "1002",
+      "title": "写出这个数",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805324509200384"
+    },
+    {
+      "id": "PAT-B1003",
+      "level": "B",
+      "label": "1003",
+      "title": "我要通过！",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805323154440192"
+    },
+    {
+      "id": "PAT-B1004",
+      "level": "B",
+      "label": "1004",
+      "title": "成绩排名",
+      "score": 20,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805321640296448"
+    },
+    {
+      "id": "PAT-B1005",
+      "level": "B",
+      "label": "1005",
+      "title": "继续(3n+1)猜想",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805320306507776"
+    },
+    {
+      "id": "PAT-B1006",
+      "level": "B",
+      "label": "1006",
+      "title": "换个格式输出整数",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805318855278592"
+    },
+    {
+      "id": "PAT-B1007",
+      "level": "B",
+      "label": "1007",
+      "title": "素数对猜想",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805317546655744"
+    },
+    {
+      "id": "PAT-B1008",
+      "level": "B",
+      "label": "1008",
+      "title": "数组元素循环右移问题",
+      "score": 20,
+      "category": "数组与双指针",
+      "tags": [
+        "数组与双指针"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805316250615808"
+    },
+    {
+      "id": "PAT-B1009",
+      "level": "B",
+      "label": "1009",
+      "title": "说反话",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805314941992960"
+    },
+    {
+      "id": "PAT-B1010",
+      "level": "B",
+      "label": "1010",
+      "title": "一元多项式求导",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805313708867584"
+    },
+    {
+      "id": "PAT-B1011",
+      "level": "B",
+      "label": "1011",
+      "title": "A+B 和 C",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805312417021952"
+    },
+    {
+      "id": "PAT-B1012",
+      "level": "B",
+      "label": "1012",
+      "title": "数字分类",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805311146147840"
+    },
+    {
+      "id": "PAT-B1013",
+      "level": "B",
+      "label": "1013",
+      "title": "数素数",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805309963354112"
+    },
+    {
+      "id": "PAT-B1014",
+      "level": "B",
+      "label": "1014",
+      "title": "福尔摩斯的约会",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805308755394560"
+    },
+    {
+      "id": "PAT-B1015",
+      "level": "B",
+      "label": "1015",
+      "title": "德才论",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805307551629312"
+    },
+    {
+      "id": "PAT-B1016",
+      "level": "B",
+      "label": "1016",
+      "title": "部分A+B",
+      "score": 15,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805306310115328"
+    },
+    {
+      "id": "PAT-B1017",
+      "level": "B",
+      "label": "1017",
+      "title": "A除以B",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805305181847552"
+    },
+    {
+      "id": "PAT-B1018",
+      "level": "B",
+      "label": "1018",
+      "title": "锤子剪刀布",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805304020025344"
+    },
+    {
+      "id": "PAT-B1019",
+      "level": "B",
+      "label": "1019",
+      "title": "数字黑洞",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805302786899968"
+    },
+    {
+      "id": "PAT-B1020",
+      "level": "B",
+      "label": "1020",
+      "title": "月饼",
+      "score": 25,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805301562163200"
+    },
+    {
+      "id": "PAT-B1021",
+      "level": "B",
+      "label": "1021",
+      "title": "个位数统计",
+      "score": 15,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805300404535296"
+    },
+    {
+      "id": "PAT-B1022",
+      "level": "B",
+      "label": "1022",
+      "title": "D进制的A+B",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805299301433344"
+    },
+    {
+      "id": "PAT-B1023",
+      "level": "B",
+      "label": "1023",
+      "title": "组个最小数",
+      "score": 20,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805298269634560"
+    },
+    {
+      "id": "PAT-B1024",
+      "level": "B",
+      "label": "1024",
+      "title": "科学计数法",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805297229447168"
+    },
+    {
+      "id": "PAT-B1025",
+      "level": "B",
+      "label": "1025",
+      "title": "反转链表",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805296180871168"
+    },
+    {
+      "id": "PAT-B1026",
+      "level": "B",
+      "label": "1026",
+      "title": "程序运行时间",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805295203598336"
+    },
+    {
+      "id": "PAT-B1027",
+      "level": "B",
+      "label": "1027",
+      "title": "打印沙漏",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805294251491328"
+    },
+    {
+      "id": "PAT-B1028",
+      "level": "B",
+      "label": "1028",
+      "title": "人口普查",
+      "score": 20,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805293282607104"
+    },
+    {
+      "id": "PAT-B1029",
+      "level": "B",
+      "label": "1029",
+      "title": "旧键盘",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805292322111488"
+    },
+    {
+      "id": "PAT-B1030",
+      "level": "B",
+      "label": "1030",
+      "title": "完美数列",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805291311284224"
+    },
+    {
+      "id": "PAT-B1031",
+      "level": "B",
+      "label": "1031",
+      "title": "查验身份证",
+      "score": 15,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805290334011392"
+    },
+    {
+      "id": "PAT-B1032",
+      "level": "B",
+      "label": "1032",
+      "title": "挖掘机技术哪家强",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805289432236032"
+    },
+    {
+      "id": "PAT-B1033",
+      "level": "B",
+      "label": "1033",
+      "title": "旧键盘打字",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805288530460672"
+    },
+    {
+      "id": "PAT-B1034",
+      "level": "B",
+      "label": "1034",
+      "title": "有理数四则运算",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805287624491008"
+    },
+    {
+      "id": "PAT-B1035",
+      "level": "B",
+      "label": "1035",
+      "title": "插入与归并",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805286714327040"
+    },
+    {
+      "id": "PAT-B1036",
+      "level": "B",
+      "label": "1036",
+      "title": "跟奥巴马一起编程",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805285812551680"
+    },
+    {
+      "id": "PAT-B1037",
+      "level": "B",
+      "label": "1037",
+      "title": "在霍格沃茨找零钱",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805284923359232"
+    },
+    {
+      "id": "PAT-B1038",
+      "level": "B",
+      "label": "1038",
+      "title": "统计同成绩学生",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805284092887040"
+    },
+    {
+      "id": "PAT-B1039",
+      "level": "B",
+      "label": "1039",
+      "title": "到底买不买",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805283241443328"
+    },
+    {
+      "id": "PAT-B1040",
+      "level": "B",
+      "label": "1040",
+      "title": "有几个PAT",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805282389999616"
+    },
+    {
+      "id": "PAT-B1041",
+      "level": "B",
+      "label": "1041",
+      "title": "考试座位号",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805281567916032"
+    },
+    {
+      "id": "PAT-B1042",
+      "level": "B",
+      "label": "1042",
+      "title": "字符统计",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805280817135616"
+    },
+    {
+      "id": "PAT-B1043",
+      "level": "B",
+      "label": "1043",
+      "title": "输出PATest",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805280074743808"
+    },
+    {
+      "id": "PAT-B1044",
+      "level": "B",
+      "label": "1044",
+      "title": "火星数字",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805279328157696"
+    },
+    {
+      "id": "PAT-B1045",
+      "level": "B",
+      "label": "1045",
+      "title": "快速排序",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805278589960192"
+    },
+    {
+      "id": "PAT-B1046",
+      "level": "B",
+      "label": "1046",
+      "title": "划拳",
+      "score": 15,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805277847568384"
+    },
+    {
+      "id": "PAT-B1047",
+      "level": "B",
+      "label": "1047",
+      "title": "编程团体赛",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805277163896832"
+    },
+    {
+      "id": "PAT-B1048",
+      "level": "B",
+      "label": "1048",
+      "title": "数字加密",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805276438282240"
+    },
+    {
+      "id": "PAT-B1049",
+      "level": "B",
+      "label": "1049",
+      "title": "数列的片段和",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805275792359424"
+    },
+    {
+      "id": "PAT-B1050",
+      "level": "B",
+      "label": "1050",
+      "title": "螺旋矩阵",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805275146436608"
+    },
+    {
+      "id": "PAT-B1051",
+      "level": "B",
+      "label": "1051",
+      "title": "复数乘法",
+      "score": 15,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805274496319488"
+    },
+    {
+      "id": "PAT-B1052",
+      "level": "B",
+      "label": "1052",
+      "title": "卖个萌",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805273883951104"
+    },
+    {
+      "id": "PAT-B1053",
+      "level": "B",
+      "label": "1053",
+      "title": "住房空置率",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805273284165632"
+    },
+    {
+      "id": "PAT-B1054",
+      "level": "B",
+      "label": "1054",
+      "title": "求平均值",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805272659214336"
+    },
+    {
+      "id": "PAT-B1055",
+      "level": "B",
+      "label": "1055",
+      "title": "集体照",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805272021680128"
+    },
+    {
+      "id": "PAT-B1056",
+      "level": "B",
+      "label": "1056",
+      "title": "组合数的和",
+      "score": 15,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805271455449088"
+    },
+    {
+      "id": "PAT-B1057",
+      "level": "B",
+      "label": "1057",
+      "title": "数零壹",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805270914383872"
+    },
+    {
+      "id": "PAT-B1058",
+      "level": "B",
+      "label": "1058",
+      "title": "选择题",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805270356541440"
+    },
+    {
+      "id": "PAT-B1059",
+      "level": "B",
+      "label": "1059",
+      "title": "C语言竞赛",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805269828059136"
+    },
+    {
+      "id": "PAT-B1060",
+      "level": "B",
+      "label": "1060",
+      "title": "爱丁顿数",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805269312159744"
+    },
+    {
+      "id": "PAT-B1061",
+      "level": "B",
+      "label": "1061",
+      "title": "判断题",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805268817231872"
+    },
+    {
+      "id": "PAT-B1062",
+      "level": "B",
+      "label": "1062",
+      "title": "最简分数",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805268334886912"
+    },
+    {
+      "id": "PAT-B1063",
+      "level": "B",
+      "label": "1063",
+      "title": "计算谱半径",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805267860930560"
+    },
+    {
+      "id": "PAT-B1064",
+      "level": "B",
+      "label": "1064",
+      "title": "朋友数",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805267416334336"
+    },
+    {
+      "id": "PAT-B1065",
+      "level": "B",
+      "label": "1065",
+      "title": "单身狗",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805266942377984"
+    },
+    {
+      "id": "PAT-B1066",
+      "level": "B",
+      "label": "1066",
+      "title": "图像过滤",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805266514558976"
+    },
+    {
+      "id": "PAT-B1067",
+      "level": "B",
+      "label": "1067",
+      "title": "试密码",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805266007048192"
+    },
+    {
+      "id": "PAT-B1068",
+      "level": "B",
+      "label": "1068",
+      "title": "万绿丛中一点红",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805265579229184"
+    },
+    {
+      "id": "PAT-B1069",
+      "level": "B",
+      "label": "1069",
+      "title": "微博转发抽奖",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805265159798784"
+    },
+    {
+      "id": "PAT-B1070",
+      "level": "B",
+      "label": "1070",
+      "title": "结绳",
+      "score": 25,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805264706813952"
+    },
+    {
+      "id": "PAT-B1071",
+      "level": "B",
+      "label": "1071",
+      "title": "小赌怡情",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805264312549376"
+    },
+    {
+      "id": "PAT-B1072",
+      "level": "B",
+      "label": "1072",
+      "title": "开学寄语",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805263964422144"
+    },
+    {
+      "id": "PAT-B1073",
+      "level": "B",
+      "label": "1073",
+      "title": "多选题常见计分法",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805263624683520"
+    },
+    {
+      "id": "PAT-B1074",
+      "level": "B",
+      "label": "1074",
+      "title": "宇宙无敌加法器",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805263297527808"
+    },
+    {
+      "id": "PAT-B1075",
+      "level": "B",
+      "label": "1075",
+      "title": "链表元素分类",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805262953594880"
+    },
+    {
+      "id": "PAT-B1076",
+      "level": "B",
+      "label": "1076",
+      "title": "Wifi密码",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805262622244864"
+    },
+    {
+      "id": "PAT-B1077",
+      "level": "B",
+      "label": "1077",
+      "title": "互评成绩计算",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805262303477760"
+    },
+    {
+      "id": "PAT-B1078",
+      "level": "B",
+      "label": "1078",
+      "title": "字符串压缩与解压",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805262018265088"
+    },
+    {
+      "id": "PAT-B1079",
+      "level": "B",
+      "label": "1079",
+      "title": "延迟的回文数",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805261754023936"
+    },
+    {
+      "id": "PAT-B1080",
+      "level": "B",
+      "label": "1080",
+      "title": "MOOC期终成绩",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805261493977088"
+    },
+    {
+      "id": "PAT-B1081",
+      "level": "B",
+      "label": "1081",
+      "title": "检查密码",
+      "score": 15,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805261217153024"
+    },
+    {
+      "id": "PAT-B1082",
+      "level": "B",
+      "label": "1082",
+      "title": "射击比赛",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805260990660608"
+    },
+    {
+      "id": "PAT-B1083",
+      "level": "B",
+      "label": "1083",
+      "title": "是否存在相等的差",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805260780945408"
+    },
+    {
+      "id": "PAT-B1084",
+      "level": "B",
+      "label": "1084",
+      "title": "外观数列",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805260583813120"
+    },
+    {
+      "id": "PAT-B1085",
+      "level": "B",
+      "label": "1085",
+      "title": "PAT单位排行",
+      "score": 25,
+      "category": "数组与双指针",
+      "tags": [
+        "数组与双指针"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805260353126400"
+    },
+    {
+      "id": "PAT-B1086",
+      "level": "B",
+      "label": "1086",
+      "title": "就不告诉你",
+      "score": 15,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1038429065476579328"
+    },
+    {
+      "id": "PAT-B1087",
+      "level": "B",
+      "label": "1087",
+      "title": "有多少不同的值",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1038429191091781632"
+    },
+    {
+      "id": "PAT-B1088",
+      "level": "B",
+      "label": "1088",
+      "title": "三人行",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1038429286185074688"
+    },
+    {
+      "id": "PAT-B1089",
+      "level": "B",
+      "label": "1089",
+      "title": "狼人杀-简单版",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1038429385296453632"
+    },
+    {
+      "id": "PAT-B1090",
+      "level": "B",
+      "label": "1090",
+      "title": "危险品装箱",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1038429484026175488"
+    },
+    {
+      "id": "PAT-B1091",
+      "level": "B",
+      "label": "1091",
+      "title": "N-自守数",
+      "score": 15,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1071785664454127616"
+    },
+    {
+      "id": "PAT-B1092",
+      "level": "B",
+      "label": "1092",
+      "title": "最好吃的月饼",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1071785779399028736"
+    },
+    {
+      "id": "PAT-B1093",
+      "level": "B",
+      "label": "1093",
+      "title": "字符串A+B",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1071785884776722432"
+    },
+    {
+      "id": "PAT-B1094",
+      "level": "B",
+      "label": "1094",
+      "title": "谷歌的招聘",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1071785997033074688"
+    },
+    {
+      "id": "PAT-B1095",
+      "level": "B",
+      "label": "1095",
+      "title": "解码PAT准考证",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1071786104348536832"
+    },
+    {
+      "id": "PAT-B1096",
+      "level": "B",
+      "label": "1096",
+      "title": "大美数",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478633632938655744"
+    },
+    {
+      "id": "PAT-B1097",
+      "level": "B",
+      "label": "1097",
+      "title": "矩阵行平移",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478633729396088832"
+    },
+    {
+      "id": "PAT-B1098",
+      "level": "B",
+      "label": "1098",
+      "title": "岩洞施工",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478633798962888704"
+    },
+    {
+      "id": "PAT-B1099",
+      "level": "B",
+      "label": "1099",
+      "title": "性感素数",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478633879405998080"
+    },
+    {
+      "id": "PAT-B1100",
+      "level": "B",
+      "label": "1100",
+      "title": "校庆",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478633948431106048"
+    },
+    {
+      "id": "PAT-B1101",
+      "level": "B",
+      "label": "1101",
+      "title": "B是A的多少倍",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634052026146816"
+    },
+    {
+      "id": "PAT-B1102",
+      "level": "B",
+      "label": "1102",
+      "title": "教超冠军卷",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634116941389824"
+    },
+    {
+      "id": "PAT-B1103",
+      "level": "B",
+      "label": "1103",
+      "title": "缘分数",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634171962896384"
+    },
+    {
+      "id": "PAT-B1104",
+      "level": "B",
+      "label": "1104",
+      "title": "天长地久",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634235812786176"
+    },
+    {
+      "id": "PAT-B1105",
+      "level": "B",
+      "label": "1105",
+      "title": "链表合并",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634321389170688"
+    },
+    {
+      "id": "PAT-B1106",
+      "level": "B",
+      "label": "1106",
+      "title": "2019数列",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634404943273984"
+    },
+    {
+      "id": "PAT-B1107",
+      "level": "B",
+      "label": "1107",
+      "title": "老鼠爱大米",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634461852217344"
+    },
+    {
+      "id": "PAT-B1108",
+      "level": "B",
+      "label": "1108",
+      "title": "String复读机",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634527046828032"
+    },
+    {
+      "id": "PAT-B1109",
+      "level": "B",
+      "label": "1109",
+      "title": "擅长C",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634605024231424"
+    },
+    {
+      "id": "PAT-B1110",
+      "level": "B",
+      "label": "1110",
+      "title": "区块反转",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478634682663895040"
+    },
+    {
+      "id": "PAT-B1111",
+      "level": "B",
+      "label": "1111",
+      "title": "对称日",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1621699285882593280"
+    },
+    {
+      "id": "PAT-B1112",
+      "level": "B",
+      "label": "1112",
+      "title": "超标区间",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1621699370158747648"
+    },
+    {
+      "id": "PAT-B1113",
+      "level": "B",
+      "label": "1113",
+      "title": "钱串子的加法",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1621699394422779904"
+    },
+    {
+      "id": "PAT-B1114",
+      "level": "B",
+      "label": "1114",
+      "title": "全素日",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1621699417143324672"
+    },
+    {
+      "id": "PAT-B1115",
+      "level": "B",
+      "label": "1115",
+      "title": "裁判机",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1621699446021115904"
+    },
+    {
+      "id": "PAT-B1116",
+      "level": "B",
+      "label": "1116",
+      "title": "多二了一点",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1697150941050929152"
+    },
+    {
+      "id": "PAT-B1117",
+      "level": "B",
+      "label": "1117",
+      "title": "数字之王",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1697150941050929153"
+    },
+    {
+      "id": "PAT-B1118",
+      "level": "B",
+      "label": "1118",
+      "title": "如需挪车请致电",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1697150941050929154"
+    },
+    {
+      "id": "PAT-B1119",
+      "level": "B",
+      "label": "1119",
+      "title": "胖达与盆盆奶",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1697150941050929155"
+    },
+    {
+      "id": "PAT-B1120",
+      "level": "B",
+      "label": "1120",
+      "title": "买地攻略",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1697150941050929156"
+    },
+    {
+      "id": "PAT-B1121",
+      "level": "B",
+      "label": "1121",
+      "title": "祖传好运",
+      "score": 15,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1729419194675666944"
+    },
+    {
+      "id": "PAT-B1122",
+      "level": "B",
+      "label": "1122",
+      "title": "找奇葩",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1729419194675666945"
+    },
+    {
+      "id": "PAT-B1123",
+      "level": "B",
+      "label": "1123",
+      "title": "舍入",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1729419194675666946"
+    },
+    {
+      "id": "PAT-B1124",
+      "level": "B",
+      "label": "1124",
+      "title": "最近的斐波那契数",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1729419194675666947"
+    },
+    {
+      "id": "PAT-B1125",
+      "level": "B",
+      "label": "1125",
+      "title": "子串与子列",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1729419194675666948"
+    },
+    {
+      "id": "PAT-A1001",
+      "level": "A",
+      "label": "1001",
+      "title": "A+B Format",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805528788582400"
+    },
+    {
+      "id": "PAT-A1002",
+      "level": "A",
+      "label": "1002",
+      "title": "A+B for Polynomials",
+      "score": 25,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805526272000000"
+    },
+    {
+      "id": "PAT-A1003",
+      "level": "A",
+      "label": "1003",
+      "title": "Emergency",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805523835109376"
+    },
+    {
+      "id": "PAT-A1004",
+      "level": "A",
+      "label": "1004",
+      "title": "Counting Leaves",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805521431773184"
+    },
+    {
+      "id": "PAT-A1005",
+      "level": "A",
+      "label": "1005",
+      "title": "Spell It Right",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805519074574336"
+    },
+    {
+      "id": "PAT-A1006",
+      "level": "A",
+      "label": "1006",
+      "title": "Sign In and Sign Out",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805516654460928"
+    },
+    {
+      "id": "PAT-A1007",
+      "level": "A",
+      "label": "1007",
+      "title": "Maximum Subsequence Sum",
+      "score": 25,
+      "category": "动态规划",
+      "tags": [
+        "动态规划"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805514284679168"
+    },
+    {
+      "id": "PAT-A1008",
+      "level": "A",
+      "label": "1008",
+      "title": "Elevator",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805511923286016"
+    },
+    {
+      "id": "PAT-A1009",
+      "level": "A",
+      "label": "1009",
+      "title": "Product of Polynomials",
+      "score": 25,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805509540921344"
+    },
+    {
+      "id": "PAT-A1010",
+      "level": "A",
+      "label": "1010",
+      "title": "Radix",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805507225665536"
+    },
+    {
+      "id": "PAT-A1011",
+      "level": "A",
+      "label": "1011",
+      "title": "World Cup Betting",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805504927186944"
+    },
+    {
+      "id": "PAT-A1012",
+      "level": "A",
+      "label": "1012",
+      "title": "The Best Rank",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805502658068480"
+    },
+    {
+      "id": "PAT-A1013",
+      "level": "A",
+      "label": "1013",
+      "title": "Battle Over Cities",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805500414115840"
+    },
+    {
+      "id": "PAT-A1014",
+      "level": "A",
+      "label": "1014",
+      "title": "Waiting in Line",
+      "score": 30,
+      "category": "队列",
+      "tags": [
+        "队列"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805498207911936"
+    },
+    {
+      "id": "PAT-A1015",
+      "level": "A",
+      "label": "1015",
+      "title": "Reversible Primes",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805495863296000"
+    },
+    {
+      "id": "PAT-A1016",
+      "level": "A",
+      "label": "1016",
+      "title": "Phone Bills",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805493648703488"
+    },
+    {
+      "id": "PAT-A1017",
+      "level": "A",
+      "label": "1017",
+      "title": "Queueing at Bank",
+      "score": 25,
+      "category": "队列",
+      "tags": [
+        "队列"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805491530579968"
+    },
+    {
+      "id": "PAT-A1018",
+      "level": "A",
+      "label": "1018",
+      "title": "Public Bike Management",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805489282433024"
+    },
+    {
+      "id": "PAT-A1019",
+      "level": "A",
+      "label": "1019",
+      "title": "General Palindromic Number",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805487143337984"
+    },
+    {
+      "id": "PAT-A1020",
+      "level": "A",
+      "label": "1020",
+      "title": "Tree Traversals",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805485033603072"
+    },
+    {
+      "id": "PAT-A1021",
+      "level": "A",
+      "label": "1021",
+      "title": "Deepest Root",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805482919673856"
+    },
+    {
+      "id": "PAT-A1022",
+      "level": "A",
+      "label": "1022",
+      "title": "Digital Library",
+      "score": 30,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805480801550336"
+    },
+    {
+      "id": "PAT-A1023",
+      "level": "A",
+      "label": "1023",
+      "title": "Have Fun with Numbers",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805478658260992"
+    },
+    {
+      "id": "PAT-A1024",
+      "level": "A",
+      "label": "1024",
+      "title": "Palindromic Number",
+      "score": 25,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805476473028608"
+    },
+    {
+      "id": "PAT-A1025",
+      "level": "A",
+      "label": "1025",
+      "title": "PAT Ranking",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805474338127872"
+    },
+    {
+      "id": "PAT-A1026",
+      "level": "A",
+      "label": "1026",
+      "title": "Table Tennis",
+      "score": 30,
+      "category": "队列",
+      "tags": [
+        "队列"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805472333250560"
+    },
+    {
+      "id": "PAT-A1027",
+      "level": "A",
+      "label": "1027",
+      "title": "Colors in Mars",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805470349344768"
+    },
+    {
+      "id": "PAT-A1028",
+      "level": "A",
+      "label": "1028",
+      "title": "List Sorting",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805468327690240"
+    },
+    {
+      "id": "PAT-A1029",
+      "level": "A",
+      "label": "1029",
+      "title": "Median",
+      "score": 25,
+      "category": "数组与双指针",
+      "tags": [
+        "数组与双指针"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805466364755968"
+    },
+    {
+      "id": "PAT-A1030",
+      "level": "A",
+      "label": "1030",
+      "title": "Travel Plan",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805464397627392"
+    },
+    {
+      "id": "PAT-A1031",
+      "level": "A",
+      "label": "1031",
+      "title": "Hello World for U",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805462535356416"
+    },
+    {
+      "id": "PAT-A1032",
+      "level": "A",
+      "label": "1032",
+      "title": "Sharing",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805460652113920"
+    },
+    {
+      "id": "PAT-A1033",
+      "level": "A",
+      "label": "1033",
+      "title": "To Fill or Not to Fill",
+      "score": 25,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805458722734080"
+    },
+    {
+      "id": "PAT-A1034",
+      "level": "A",
+      "label": "1034",
+      "title": "Head of a Gang",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805456881434624"
+    },
+    {
+      "id": "PAT-A1035",
+      "level": "A",
+      "label": "1035",
+      "title": "Password",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805454989803520"
+    },
+    {
+      "id": "PAT-A1036",
+      "level": "A",
+      "label": "1036",
+      "title": "Boys vs Girls",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805453203030016"
+    },
+    {
+      "id": "PAT-A1037",
+      "level": "A",
+      "label": "1037",
+      "title": "Magic Coupon",
+      "score": 25,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805451374313472"
+    },
+    {
+      "id": "PAT-A1038",
+      "level": "A",
+      "label": "1038",
+      "title": "Recover the Smallest Number",
+      "score": 30,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805449625288704"
+    },
+    {
+      "id": "PAT-A1039",
+      "level": "A",
+      "label": "1039",
+      "title": "Course List for Student",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805447855292416"
+    },
+    {
+      "id": "PAT-A1040",
+      "level": "A",
+      "label": "1040",
+      "title": "Longest Symmetric String",
+      "score": 25,
+      "category": "动态规划",
+      "tags": [
+        "动态规划"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805446102073344"
+    },
+    {
+      "id": "PAT-A1041",
+      "level": "A",
+      "label": "1041",
+      "title": "Be Unique",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805444361437184"
+    },
+    {
+      "id": "PAT-A1042",
+      "level": "A",
+      "label": "1042",
+      "title": "Shuffling Machine",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805442671132672"
+    },
+    {
+      "id": "PAT-A1043",
+      "level": "A",
+      "label": "1043",
+      "title": "Is It a Binary Search Tree",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805440976633856"
+    },
+    {
+      "id": "PAT-A1044",
+      "level": "A",
+      "label": "1044",
+      "title": "Shopping in Mars",
+      "score": 25,
+      "category": "数组与双指针",
+      "tags": [
+        "数组与双指针"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805439202443264"
+    },
+    {
+      "id": "PAT-A1045",
+      "level": "A",
+      "label": "1045",
+      "title": "Favorite Color Stripe",
+      "score": 30,
+      "category": "动态规划",
+      "tags": [
+        "动态规划"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805437411475456"
+    },
+    {
+      "id": "PAT-A1046",
+      "level": "A",
+      "label": "1046",
+      "title": "Shortest Distance",
+      "score": 20,
+      "category": "区间数据结构",
+      "tags": [
+        "区间数据结构"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805435700199424"
+    },
+    {
+      "id": "PAT-A1047",
+      "level": "A",
+      "label": "1047",
+      "title": "Student List for Course",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805433955368960"
+    },
+    {
+      "id": "PAT-A1048",
+      "level": "A",
+      "label": "1048",
+      "title": "Find Coins",
+      "score": 25,
+      "category": "动态规划",
+      "tags": [
+        "动态规划"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805432256675840"
+    },
+    {
+      "id": "PAT-A1049",
+      "level": "A",
+      "label": "1049",
+      "title": "Counting Ones",
+      "score": 30,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805430595731456"
+    },
+    {
+      "id": "PAT-A1050",
+      "level": "A",
+      "label": "1050",
+      "title": "String Subtraction",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805429018673152"
+    },
+    {
+      "id": "PAT-A1051",
+      "level": "A",
+      "label": "1051",
+      "title": "Pop Sequence",
+      "score": 25,
+      "category": "栈",
+      "tags": [
+        "栈"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805427332562944"
+    },
+    {
+      "id": "PAT-A1052",
+      "level": "A",
+      "label": "1052",
+      "title": "Linked List Sorting",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805425780670464"
+    },
+    {
+      "id": "PAT-A1053",
+      "level": "A",
+      "label": "1053",
+      "title": "Path of Equal Weight",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805424153280512"
+    },
+    {
+      "id": "PAT-A1054",
+      "level": "A",
+      "label": "1054",
+      "title": "The Dominant Color",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805422639136768"
+    },
+    {
+      "id": "PAT-A1055",
+      "level": "A",
+      "label": "1055",
+      "title": "The World's Richest",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805421066272768"
+    },
+    {
+      "id": "PAT-A1056",
+      "level": "A",
+      "label": "1056",
+      "title": "Mice and Rice",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805419468242944"
+    },
+    {
+      "id": "PAT-A1057",
+      "level": "A",
+      "label": "1057",
+      "title": "Stack",
+      "score": 30,
+      "category": "堆",
+      "tags": [
+        "堆"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805417945710592"
+    },
+    {
+      "id": "PAT-A1058",
+      "level": "A",
+      "label": "1058",
+      "title": "A+B in Hogwarts",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805416519647232"
+    },
+    {
+      "id": "PAT-A1059",
+      "level": "A",
+      "label": "1059",
+      "title": "Prime Factors",
+      "score": 25,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805415005503488"
+    },
+    {
+      "id": "PAT-A1060",
+      "level": "A",
+      "label": "1060",
+      "title": "Are They Equal",
+      "score": 25,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805413520719872"
+    },
+    {
+      "id": "PAT-A1061",
+      "level": "A",
+      "label": "1061",
+      "title": "Dating",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805411985604608"
+    },
+    {
+      "id": "PAT-A1062",
+      "level": "A",
+      "label": "1062",
+      "title": "Talent and Virtue",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805410555346944"
+    },
+    {
+      "id": "PAT-A1063",
+      "level": "A",
+      "label": "1063",
+      "title": "Set Similarity",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805409175420928"
+    },
+    {
+      "id": "PAT-A1064",
+      "level": "A",
+      "label": "1064",
+      "title": "Complete Binary Search Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805407749357568"
+    },
+    {
+      "id": "PAT-A1065",
+      "level": "A",
+      "label": "1065",
+      "title": "A+B and C (64bit)",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805406352654336"
+    },
+    {
+      "id": "PAT-A1066",
+      "level": "A",
+      "label": "1066",
+      "title": "Root of AVL Tree",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805404939173888"
+    },
+    {
+      "id": "PAT-A1067",
+      "level": "A",
+      "label": "1067",
+      "title": "Sort with Swap(0, i)",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805403651522560"
+    },
+    {
+      "id": "PAT-A1068",
+      "level": "A",
+      "label": "1068",
+      "title": "Find More Coins",
+      "score": 30,
+      "category": "动态规划",
+      "tags": [
+        "动态规划"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805402305150976"
+    },
+    {
+      "id": "PAT-A1069",
+      "level": "A",
+      "label": "1069",
+      "title": "The Black Hole of Numbers",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805400954585088"
+    },
+    {
+      "id": "PAT-A1070",
+      "level": "A",
+      "label": "1070",
+      "title": "Mooncake",
+      "score": 25,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805399578853376"
+    },
+    {
+      "id": "PAT-A1071",
+      "level": "A",
+      "label": "1071",
+      "title": "Speech Patterns",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805398257647616"
+    },
+    {
+      "id": "PAT-A1072",
+      "level": "A",
+      "label": "1072",
+      "title": "Gas Station",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805396953219072"
+    },
+    {
+      "id": "PAT-A1073",
+      "level": "A",
+      "label": "1073",
+      "title": "Scientific Notation",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805395707510784"
+    },
+    {
+      "id": "PAT-A1074",
+      "level": "A",
+      "label": "1074",
+      "title": "Reversing Linked List",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805394512134144"
+    },
+    {
+      "id": "PAT-A1075",
+      "level": "A",
+      "label": "1075",
+      "title": "PAT Judge",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805393241260032"
+    },
+    {
+      "id": "PAT-A1076",
+      "level": "A",
+      "label": "1076",
+      "title": "Forwards on Weibo",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805392092020736"
+    },
+    {
+      "id": "PAT-A1077",
+      "level": "A",
+      "label": "1077",
+      "title": "Kuchiguse",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805390896644096"
+    },
+    {
+      "id": "PAT-A1078",
+      "level": "A",
+      "label": "1078",
+      "title": "Hashing",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805389634158592"
+    },
+    {
+      "id": "PAT-A1079",
+      "level": "A",
+      "label": "1079",
+      "title": "Total Sales of Supply Chain",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805388447170560"
+    },
+    {
+      "id": "PAT-A1080",
+      "level": "A",
+      "label": "1080",
+      "title": "Graduate Admission",
+      "score": 30,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805387268571136"
+    },
+    {
+      "id": "PAT-A1081",
+      "level": "A",
+      "label": "1081",
+      "title": "Rational Sum",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805386161274880"
+    },
+    {
+      "id": "PAT-A1082",
+      "level": "A",
+      "label": "1082",
+      "title": "Read Number in Chinese",
+      "score": 25,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805385053978624"
+    },
+    {
+      "id": "PAT-A1083",
+      "level": "A",
+      "label": "1083",
+      "title": "List Grades",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805383929905152"
+    },
+    {
+      "id": "PAT-A1084",
+      "level": "A",
+      "label": "1084",
+      "title": "Broken Keyboard",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805382902300672"
+    },
+    {
+      "id": "PAT-A1085",
+      "level": "A",
+      "label": "1085",
+      "title": "Perfect Sequence",
+      "score": 25,
+      "category": "数组与双指针",
+      "tags": [
+        "数组与双指针"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805381845336064"
+    },
+    {
+      "id": "PAT-A1086",
+      "level": "A",
+      "label": "1086",
+      "title": "Tree Traversals Again",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805380754817024"
+    },
+    {
+      "id": "PAT-A1087",
+      "level": "A",
+      "label": "1087",
+      "title": "All Roads Lead to Rome",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805379664297984"
+    },
+    {
+      "id": "PAT-A1088",
+      "level": "A",
+      "label": "1088",
+      "title": "Rational Arithmetic",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805378443755520"
+    },
+    {
+      "id": "PAT-A1089",
+      "level": "A",
+      "label": "1089",
+      "title": "Insert or Merge",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805377432928256"
+    },
+    {
+      "id": "PAT-A1090",
+      "level": "A",
+      "label": "1090",
+      "title": "Highest Price in Supply Chain",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805376476626944"
+    },
+    {
+      "id": "PAT-A1091",
+      "level": "A",
+      "label": "1091",
+      "title": "Acute Stroke",
+      "score": 30,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805375457411072"
+    },
+    {
+      "id": "PAT-A1092",
+      "level": "A",
+      "label": "1092",
+      "title": "To Buy or Not to Buy",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805374509498368"
+    },
+    {
+      "id": "PAT-A1093",
+      "level": "A",
+      "label": "1093",
+      "title": "Count PAT's",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805373582557184"
+    },
+    {
+      "id": "PAT-A1094",
+      "level": "A",
+      "label": "1094",
+      "title": "The Largest Generation",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805372601090048"
+    },
+    {
+      "id": "PAT-A1095",
+      "level": "A",
+      "label": "1095",
+      "title": "Cars on Campus",
+      "score": 30,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805371602845696"
+    },
+    {
+      "id": "PAT-A1096",
+      "level": "A",
+      "label": "1096",
+      "title": "Consecutive Factors",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805370650738688"
+    },
+    {
+      "id": "PAT-A1097",
+      "level": "A",
+      "label": "1097",
+      "title": "Deduplication on a Linked List",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805369774129152"
+    },
+    {
+      "id": "PAT-A1098",
+      "level": "A",
+      "label": "1098",
+      "title": "Insertion or Heap Sort",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805368847187968"
+    },
+    {
+      "id": "PAT-A1099",
+      "level": "A",
+      "label": "1099",
+      "title": "Build A Binary Search Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805367987355648"
+    },
+    {
+      "id": "PAT-A1100",
+      "level": "A",
+      "label": "1100",
+      "title": "Mars Numbers",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805367156883456"
+    },
+    {
+      "id": "PAT-A1101",
+      "level": "A",
+      "label": "1101",
+      "title": "Quick Sort",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805366343188480"
+    },
+    {
+      "id": "PAT-A1102",
+      "level": "A",
+      "label": "1102",
+      "title": "Invert a Binary Tree",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805365537882112"
+    },
+    {
+      "id": "PAT-A1103",
+      "level": "A",
+      "label": "1103",
+      "title": "Integer Factorization",
+      "score": 30,
+      "category": "搜索与回溯",
+      "tags": [
+        "搜索与回溯"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805364711604224"
+    },
+    {
+      "id": "PAT-A1104",
+      "level": "A",
+      "label": "1104",
+      "title": "Sum of Number Segments",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805363914686464"
+    },
+    {
+      "id": "PAT-A1105",
+      "level": "A",
+      "label": "1105",
+      "title": "Spiral Matrix",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805363117768704"
+    },
+    {
+      "id": "PAT-A1106",
+      "level": "A",
+      "label": "1106",
+      "title": "Lowest Price in Supply Chain",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805362341822464"
+    },
+    {
+      "id": "PAT-A1107",
+      "level": "A",
+      "label": "1107",
+      "title": "Social Clusters",
+      "score": 30,
+      "category": "并查集",
+      "tags": [
+        "并查集"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805361586847744"
+    },
+    {
+      "id": "PAT-A1108",
+      "level": "A",
+      "label": "1108",
+      "title": "Finding Average",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805360777347072"
+    },
+    {
+      "id": "PAT-A1109",
+      "level": "A",
+      "label": "1109",
+      "title": "Group Photo",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805360043343872"
+    },
+    {
+      "id": "PAT-A1110",
+      "level": "A",
+      "label": "1110",
+      "title": "Complete Binary Tree",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805359372255232"
+    },
+    {
+      "id": "PAT-A1111",
+      "level": "A",
+      "label": "1111",
+      "title": "Online Map",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805358663417856"
+    },
+    {
+      "id": "PAT-A1112",
+      "level": "A",
+      "label": "1112",
+      "title": "Stucked Keyboard",
+      "score": 20,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805357933608960"
+    },
+    {
+      "id": "PAT-A1113",
+      "level": "A",
+      "label": "1113",
+      "title": "Integer Set Partition",
+      "score": 25,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805357258326016"
+    },
+    {
+      "id": "PAT-A1114",
+      "level": "A",
+      "label": "1114",
+      "title": "Family Property",
+      "score": 25,
+      "category": "并查集",
+      "tags": [
+        "并查集"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805356599820288"
+    },
+    {
+      "id": "PAT-A1115",
+      "level": "A",
+      "label": "1115",
+      "title": "Counting Nodes in a Binary Search Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805355987451904"
+    },
+    {
+      "id": "PAT-A1116",
+      "level": "A",
+      "label": "1116",
+      "title": "Come on! Let's C",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805355358306304"
+    },
+    {
+      "id": "PAT-A1117",
+      "level": "A",
+      "label": "1117",
+      "title": "Eddington Number",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805354762715136"
+    },
+    {
+      "id": "PAT-A1118",
+      "level": "A",
+      "label": "1118",
+      "title": "Birds in Forest",
+      "score": 25,
+      "category": "并查集",
+      "tags": [
+        "并查集"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805354108403712"
+    },
+    {
+      "id": "PAT-A1119",
+      "level": "A",
+      "label": "1119",
+      "title": "Pre- and Post-order Traversals",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805353470869504"
+    },
+    {
+      "id": "PAT-A1120",
+      "level": "A",
+      "label": "1120",
+      "title": "Friend Numbers",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805352925609984"
+    },
+    {
+      "id": "PAT-A1121",
+      "level": "A",
+      "label": "1121",
+      "title": "Damn Single",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805352359378944"
+    },
+    {
+      "id": "PAT-A1122",
+      "level": "A",
+      "label": "1122",
+      "title": "Hamiltonian Cycle",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805351814119424"
+    },
+    {
+      "id": "PAT-A1123",
+      "level": "A",
+      "label": "1123",
+      "title": "Is It a Complete AVL Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805351302414336"
+    },
+    {
+      "id": "PAT-A1124",
+      "level": "A",
+      "label": "1124",
+      "title": "Raffle for Weibo Followers",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805350803292160"
+    },
+    {
+      "id": "PAT-A1125",
+      "level": "A",
+      "label": "1125",
+      "title": "Chain the Ropes",
+      "score": 25,
+      "category": "贪心",
+      "tags": [
+        "贪心"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805350316752896"
+    },
+    {
+      "id": "PAT-A1126",
+      "level": "A",
+      "label": "1126",
+      "title": "Eulerian Path",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805349851185152"
+    },
+    {
+      "id": "PAT-A1127",
+      "level": "A",
+      "label": "1127",
+      "title": "ZigZagging on a Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805349394006016"
+    },
+    {
+      "id": "PAT-A1128",
+      "level": "A",
+      "label": "1128",
+      "title": "N Queens Puzzle",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805348915855360"
+    },
+    {
+      "id": "PAT-A1129",
+      "level": "A",
+      "label": "1129",
+      "title": "Recommendation System",
+      "score": 25,
+      "category": "堆",
+      "tags": [
+        "堆"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805348471259136"
+    },
+    {
+      "id": "PAT-A1130",
+      "level": "A",
+      "label": "1130",
+      "title": "Infix Expression",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805347921805312"
+    },
+    {
+      "id": "PAT-A1131",
+      "level": "A",
+      "label": "1131",
+      "title": "Subway Map",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805347523346432"
+    },
+    {
+      "id": "PAT-A1132",
+      "level": "A",
+      "label": "1132",
+      "title": "Cut Integer",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805347145859072"
+    },
+    {
+      "id": "PAT-A1133",
+      "level": "A",
+      "label": "1133",
+      "title": "Splitting A Linked List",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805346776760320"
+    },
+    {
+      "id": "PAT-A1134",
+      "level": "A",
+      "label": "1134",
+      "title": "Vertex Cover",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805346428633088"
+    },
+    {
+      "id": "PAT-A1135",
+      "level": "A",
+      "label": "1135",
+      "title": "Is It A Red-Black Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805346063728640"
+    },
+    {
+      "id": "PAT-A1136",
+      "level": "A",
+      "label": "1136",
+      "title": "A Delayed Palindrome",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805345732378624"
+    },
+    {
+      "id": "PAT-A1137",
+      "level": "A",
+      "label": "1137",
+      "title": "Final Grading",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805345401028608"
+    },
+    {
+      "id": "PAT-A1138",
+      "level": "A",
+      "label": "1138",
+      "title": "Postorder Traversal",
+      "score": 25,
+      "category": "搜索与回溯",
+      "tags": [
+        "搜索与回溯"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805345078067200"
+    },
+    {
+      "id": "PAT-A1139",
+      "level": "A",
+      "label": "1139",
+      "title": "First Contact",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805344776077312"
+    },
+    {
+      "id": "PAT-A1140",
+      "level": "A",
+      "label": "1140",
+      "title": "Look-and-say Sequence",
+      "score": 20,
+      "category": "字符串",
+      "tags": [
+        "字符串"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805344490864640"
+    },
+    {
+      "id": "PAT-A1141",
+      "level": "A",
+      "label": "1141",
+      "title": "PAT Ranking of Institutions",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805344222429184"
+    },
+    {
+      "id": "PAT-A1142",
+      "level": "A",
+      "label": "1142",
+      "title": "Maximal Clique",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805343979159552"
+    },
+    {
+      "id": "PAT-A1143",
+      "level": "A",
+      "label": "1143",
+      "title": "Lowest Common Ancestor",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805343727501312"
+    },
+    {
+      "id": "PAT-A1144",
+      "level": "A",
+      "label": "1144",
+      "title": "The Missing Number",
+      "score": 20,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805343463260160"
+    },
+    {
+      "id": "PAT-A1145",
+      "level": "A",
+      "label": "1145",
+      "title": "Hashing - Average Search Time",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805343236767744"
+    },
+    {
+      "id": "PAT-A1146",
+      "level": "A",
+      "label": "1146",
+      "title": "Topological Order",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805343043829760"
+    },
+    {
+      "id": "PAT-A1147",
+      "level": "A",
+      "label": "1147",
+      "title": "Heaps",
+      "score": 30,
+      "category": "堆",
+      "tags": [
+        "堆"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805342821531648"
+    },
+    {
+      "id": "PAT-A1148",
+      "level": "A",
+      "label": "1148",
+      "title": "Werewolf - Simple Version",
+      "score": 20,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1038429808099098624"
+    },
+    {
+      "id": "PAT-A1149",
+      "level": "A",
+      "label": "1149",
+      "title": "Dangerous Goods Packaging",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1038429908921778176"
+    },
+    {
+      "id": "PAT-A1150",
+      "level": "A",
+      "label": "1150",
+      "title": "Travelling Salesman Problem",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1038430013544464384"
+    },
+    {
+      "id": "PAT-A1151",
+      "level": "A",
+      "label": "1151",
+      "title": "LCA in a Binary Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1038430130011897856"
+    },
+    {
+      "id": "PAT-A1152",
+      "level": "A",
+      "label": "1152",
+      "title": "Google Recruitment",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1071785055080476672"
+    },
+    {
+      "id": "PAT-A1153",
+      "level": "A",
+      "label": "1153",
+      "title": "Decode Registration Card of PAT",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1071785190929788928"
+    },
+    {
+      "id": "PAT-A1154",
+      "level": "A",
+      "label": "1154",
+      "title": "Vertex Coloring",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1071785301894295552"
+    },
+    {
+      "id": "PAT-A1155",
+      "level": "A",
+      "label": "1155",
+      "title": "Heap Paths",
+      "score": 30,
+      "category": "堆",
+      "tags": [
+        "堆"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1071785408849047552"
+    },
+    {
+      "id": "PAT-A1156",
+      "level": "A",
+      "label": "1156",
+      "title": "Sexy Primes",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478634912848322560"
+    },
+    {
+      "id": "PAT-A1157",
+      "level": "A",
+      "label": "1157",
+      "title": "Anniversary",
+      "score": 25,
+      "category": "哈希与集合",
+      "tags": [
+        "哈希与集合"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478634991737962496"
+    },
+    {
+      "id": "PAT-A1158",
+      "level": "A",
+      "label": "1158",
+      "title": "Telefraud Detection",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635060278108160"
+    },
+    {
+      "id": "PAT-A1159",
+      "level": "A",
+      "label": "1159",
+      "title": "Structure of a Binary Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635126488367104"
+    },
+    {
+      "id": "PAT-A1160",
+      "level": "A",
+      "label": "1160",
+      "title": "Forever",
+      "score": 20,
+      "category": "搜索与回溯",
+      "tags": [
+        "搜索与回溯"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635415925800960"
+    },
+    {
+      "id": "PAT-A1161",
+      "level": "A",
+      "label": "1161",
+      "title": "Merging Linked Lists",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635524918910976"
+    },
+    {
+      "id": "PAT-A1162",
+      "level": "A",
+      "label": "1162",
+      "title": "Postfix Expression",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635599577522176"
+    },
+    {
+      "id": "PAT-A1163",
+      "level": "A",
+      "label": "1163",
+      "title": "Dijkstra Sequence",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635670373253120"
+    },
+    {
+      "id": "PAT-A1164",
+      "level": "A",
+      "label": "1164",
+      "title": "Good in C",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635767601967104"
+    },
+    {
+      "id": "PAT-A1165",
+      "level": "A",
+      "label": "1165",
+      "title": "Block Reversing",
+      "score": 25,
+      "category": "链表",
+      "tags": [
+        "链表"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635841315209216"
+    },
+    {
+      "id": "PAT-A1166",
+      "level": "A",
+      "label": "1166",
+      "title": "Summit",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478635919459287040"
+    },
+    {
+      "id": "PAT-A1167",
+      "level": "A",
+      "label": "1167",
+      "title": "Cartesian Tree",
+      "score": 30,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1478636026017230848"
+    },
+    {
+      "id": "PAT-A1168",
+      "level": "A",
+      "label": "1168",
+      "title": "Prime Day",
+      "score": 20,
+      "category": "数学与数论",
+      "tags": [
+        "数学与数论"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1621700026718310400"
+    },
+    {
+      "id": "PAT-A1169",
+      "level": "A",
+      "label": "1169",
+      "title": "The Judger",
+      "score": 25,
+      "category": "排序与查找",
+      "tags": [
+        "排序与查找"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1621700048826490880"
+    },
+    {
+      "id": "PAT-A1170",
+      "level": "A",
+      "label": "1170",
+      "title": "Safari Park",
+      "score": 25,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1621700071370862592"
+    },
+    {
+      "id": "PAT-A1171",
+      "level": "A",
+      "label": "1171",
+      "title": "Replacement Selection",
+      "score": 30,
+      "category": "堆",
+      "tags": [
+        "堆"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1621700097589465088"
+    },
+    {
+      "id": "PAT-A1172",
+      "level": "A",
+      "label": "1172",
+      "title": "Panda and PP Milk",
+      "score": 20,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1697151678120173568"
+    },
+    {
+      "id": "PAT-A1173",
+      "level": "A",
+      "label": "1173",
+      "title": "How Many Ways to Buy a Piece of Land",
+      "score": 25,
+      "category": "区间数据结构",
+      "tags": [
+        "区间数据结构"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1697151678120173569"
+    },
+    {
+      "id": "PAT-A1174",
+      "level": "A",
+      "label": "1174",
+      "title": "Left-View of Binary Tree",
+      "score": 25,
+      "category": "树",
+      "tags": [
+        "树"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1697151678120173570"
+    },
+    {
+      "id": "PAT-A1175",
+      "level": "A",
+      "label": "1175",
+      "title": "Professional Ability Test",
+      "score": 30,
+      "category": "图",
+      "tags": [
+        "图"
+      ],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1697151678120173571"
+    },
+    {
+      "id": "PAT-A1176",
+      "level": "A",
+      "label": "1176",
+      "title": "The Closest Fibonacci Number",
+      "score": 20,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1729419732192542720"
+    },
+    {
+      "id": "PAT-A1177",
+      "level": "A",
+      "label": "1177",
+      "title": "Subsequence in Substring",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1729419732192542721"
+    },
+    {
+      "id": "PAT-A1178",
+      "level": "A",
+      "label": "1178",
+      "title": "File Path",
+      "score": 25,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1729419732192542722"
+    },
+    {
+      "id": "PAT-A1179",
+      "level": "A",
+      "label": "1179",
+      "title": "Chemical Equation",
+      "score": 30,
+      "category": "待分类",
+      "tags": [],
+      "official_url": "https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1729419732192542723"
+    }
+  ],
+  "classification_note": "分类为本站整理的学习提示，非官方标签；未核对的条目保留待分类。"
+}

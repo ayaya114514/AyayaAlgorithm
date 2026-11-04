@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1033",
+  "title": "最长无重复子串",
+  "category": "字符串",
+  "tags": [
+    "滑动窗口",
+    "哈希表"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "求不含重复字符的最长连续子串长度。",
+  "input_format": "一行仅含英文字母和数字的字符串，长度 0 至 100000。",
+  "output_format": "输出最大长度。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "abcabcbb",
+      "output": "3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "abcabcbb",
+      "output": "3"
+    },
+    {
+      "input": "",
+      "output": "0"
+    },
+    {
+      "input": "bbbb",
+      "output": "1"
+    },
+    {
+      "input": "pwwkew",
+      "output": "3"
+    },
+    {
+      "input": "abba",
+      "output": "2"
+    },
+    {
+      "input": "aA1bB2",
+      "output": "6"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

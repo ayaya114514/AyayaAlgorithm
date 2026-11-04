@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1036",
+  "title": "01 背包",
+  "category": "动态规划",
+  "tags": [
+    "背包",
+    "滚动数组"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "每件物品至多选一次，总重量不得超过容量 W，求可获得的最大总价值。允许不选任何物品。",
+  "input_format": "首行 n W，随后 n 行重量 w 与价值 v。1≤n≤200，0≤W≤10000，1≤w≤10000，0≤v≤10^6。",
+  "output_format": "输出最大价值。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 5\n2 3\n3 4\n4 5",
+      "output": "7"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 5\n2 3\n3 4\n4 5",
+      "output": "7"
+    },
+    {
+      "input": "1 0\n1 9",
+      "output": "0"
+    },
+    {
+      "input": "1 5\n2 3",
+      "output": "3"
+    },
+    {
+      "input": "2 4\n2 3\n2 5",
+      "output": "8"
+    },
+    {
+      "input": "2 1\n2 3\n3 4",
+      "output": "0"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

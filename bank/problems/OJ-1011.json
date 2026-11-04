@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1011",
+  "title": "后缀表达式求值",
+  "category": "栈",
+  "tags": [
+    "表达式",
+    "栈"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "计算合法后缀表达式。操作数为整数，运算符仅有 +、-、*，所有结果在 64 位有符号整数内。",
+  "input_format": "一行以空格分隔的表达式，至多 10000 个 token。",
+  "output_format": "输出表达式值。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 4 + 2 *",
+      "output": "14"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 4 + 2 *",
+      "output": "14"
+    },
+    {
+      "input": "-5",
+      "output": "-5"
+    },
+    {
+      "input": "3 8 -",
+      "output": "-5"
+    },
+    {
+      "input": "-2 -3 * 4 +",
+      "output": "10"
+    },
+    {
+      "input": "1 2 + 3 4 + *",
+      "output": "21"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

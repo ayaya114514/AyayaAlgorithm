@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1014",
+  "title": "约瑟夫环",
+  "category": "队列",
+  "tags": [
+    "循环队列"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "n 个人编号 1 至 n 围成一圈。从 1 开始报数，每数到第 k 人就移出，从下一人重新从 1 报数，直到全部移出。",
+  "input_format": "一行 n k，1≤n,k≤1000。",
+  "output_format": "输出移出顺序。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "5 2",
+      "output": "2 4 1 5 3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "5 2",
+      "output": "2 4 1 5 3"
+    },
+    {
+      "input": "1 100",
+      "output": "1"
+    },
+    {
+      "input": "5 1",
+      "output": "1 2 3 4 5"
+    },
+    {
+      "input": "3 5",
+      "output": "2 3 1"
+    },
+    {
+      "input": "20 17",
+      "output": "17 14 12 11 13 16 20 4 9 2 15 8 10 1 18 3 5 7 19 6"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1032",
+  "title": "模式串出现次数",
+  "category": "字符串",
+  "tags": [
+    "KMP",
+    "前缀函数"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "统计模式串在文本中出现的次数，允许匹配区间重叠。",
+  "input_format": "第一行文本，第二行非空模式串；均仅含小写字母，各长度不超过 100000。文本可为空。",
+  "output_format": "输出匹配次数。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "aaaaa\naaa",
+      "output": "3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "aaaaa\naaa",
+      "output": "3"
+    },
+    {
+      "input": "\na",
+      "output": "0"
+    },
+    {
+      "input": "abc\nd",
+      "output": "0"
+    },
+    {
+      "input": "abababa\naba",
+      "output": "3"
+    },
+    {
+      "input": "ab\nabc",
+      "output": "0"
+    },
+    {
+      "input": "a\na",
+      "output": "1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

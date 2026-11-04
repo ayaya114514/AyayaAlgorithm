@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "CUSTOM-1001",
+  "title": "我的第一道题：整数求和",
+  "category": "入门与模拟",
+  "tags": [
+    "输入输出",
+    "64 位整数"
+  ],
+  "difficulty": "入门",
+  "score": 15,
+  "statement": "给定两个整数，计算它们的和。",
+  "input_format": "一行两个整数 a b。",
+  "output_format": "输出 a+b。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 5\n",
+      "output": "8"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 5\n",
+      "output": "8"
+    },
+    {
+      "input": "0 0",
+      "output": "0"
+    },
+    {
+      "input": "-7 3",
+      "output": "-4"
+    },
+    {
+      "input": "2147483647 2147483647",
+      "output": "4294967294"
+    },
+    {
+      "input": "-100 -200",
+      "output": "-300"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "个人导入示例",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1044",
+  "title": "冗余连边计数",
+  "category": "并查集",
+  "tags": [
+    "判环",
+    "连通性"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "按给定顺序逐条加入无向边。如果加入前两个端点已经连通，则这条边为冗余边。统计冗余边总数。自环也计为冗余边。",
+  "input_format": "首行 n m，随后 m 行 u v。1≤n≤100000，0≤m≤200000。",
+  "output_format": "输出冗余边数。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 4\n1 2\n2 3\n1 3\n2 2",
+      "output": "2"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 4\n1 2\n2 3\n1 3\n2 2",
+      "output": "2"
+    },
+    {
+      "input": "1 0",
+      "output": "0"
+    },
+    {
+      "input": "1 2\n1 1\n1 1",
+      "output": "2"
+    },
+    {
+      "input": "3 2\n1 2\n2 3",
+      "output": "0"
+    },
+    {
+      "input": "2 3\n1 2\n2 1\n1 2",
+      "output": "2"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

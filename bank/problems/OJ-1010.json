@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1010",
+  "title": "括号匹配",
+  "category": "栈",
+  "tags": [
+    "栈",
+    "匹配"
+  ],
+  "difficulty": "入门",
+  "score": 15,
+  "statement": "判断仅由 ()[]{} 组成的字符串是否正确嵌套。空串视为匹配。",
+  "input_format": "一行括号字符串，长度 0 至 100000。",
+  "output_format": "匹配输出 YES，否则输出 NO。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "{[()()]}",
+      "output": "YES"
+    }
+  ],
+  "tests": [
+    {
+      "input": "{[()()]}",
+      "output": "YES"
+    },
+    {
+      "input": "",
+      "output": "YES"
+    },
+    {
+      "input": "([)]",
+      "output": "NO"
+    },
+    {
+      "input": "((",
+      "output": "NO"
+    },
+    {
+      "input": ")(",
+      "output": "NO"
+    },
+    {
+      "input": "[]{}()",
+      "output": "YES"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

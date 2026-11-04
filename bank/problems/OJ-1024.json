@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1024",
+  "title": "字典序拓扑排序",
+  "category": "图",
+  "tags": [
+    "DAG",
+    "入度",
+    "优先队列"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "求有向图字典序最小的拓扑序。每次有多个入度为零的顶点时优先选择编号最小者。",
+  "input_format": "首行 n m，随后 m 行 u v，表示 u 必须先于 v。1≤n≤100000，0≤m≤200000。",
+  "output_format": "存在则输出拓扑序；有环输出 IMPOSSIBLE。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 3\n1 3\n2 3\n3 4",
+      "output": "1 2 3 4"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 3\n1 3\n2 3\n3 4",
+      "output": "1 2 3 4"
+    },
+    {
+      "input": "1 0",
+      "output": "1"
+    },
+    {
+      "input": "3 0",
+      "output": "1 2 3"
+    },
+    {
+      "input": "2 2\n1 2\n2 1",
+      "output": "IMPOSSIBLE"
+    },
+    {
+      "input": "3 2\n3 1\n3 2",
+      "output": "3 1 2"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

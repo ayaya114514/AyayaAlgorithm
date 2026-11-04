@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1038",
+  "title": "合并重叠区间",
+  "category": "贪心",
+  "tags": [
+    "区间",
+    "排序"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "将所有有交集的闭区间合并。同端点相接也算重叠。",
+  "input_format": "首行 n，随后 n 行 left right，0≤n≤100000，left≤right。",
+  "output_format": "首行输出合并后的区间数，随后按左端点升序逐行输出区间。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4\n1 3\n2 6\n8 10\n10 12",
+      "output": "2\n1 6\n8 12"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4\n1 3\n2 6\n8 10\n10 12",
+      "output": "2\n1 6\n8 12"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    },
+    {
+      "input": "1\n2 2",
+      "output": "1\n2 2"
+    },
+    {
+      "input": "3\n-5 -2\n-3 0\n2 4",
+      "output": "2\n-5 0\n2 4"
+    },
+    {
+      "input": "3\n1 10\n2 3\n4 5",
+      "output": "1\n1 10"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

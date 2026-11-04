@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1022",
+  "title": "无向图连通分量",
+  "category": "图",
+  "tags": [
+    "DFS / BFS",
+    "连通性"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "求无向图中连通分量的个数。孤立顶点各自构成一个分量，允许重边和自环。",
+  "input_format": "首行 n m，随后 m 行 u v。1≤n≤100000，0≤m≤200000；编号为 1 至 n。",
+  "output_format": "输出分量个数。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "5 3\n1 2\n2 3\n4 5",
+      "output": "2"
+    }
+  ],
+  "tests": [
+    {
+      "input": "5 3\n1 2\n2 3\n4 5",
+      "output": "2"
+    },
+    {
+      "input": "1 0",
+      "output": "1"
+    },
+    {
+      "input": "4 0",
+      "output": "4"
+    },
+    {
+      "input": "3 4\n1 1\n1 2\n2 1\n2 3",
+      "output": "1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

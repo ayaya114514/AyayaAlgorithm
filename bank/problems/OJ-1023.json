@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1023",
+  "title": "非负权最短路",
+  "category": "图",
+  "tags": [
+    "Dijkstra",
+    "最短路"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "在有向非负权图中，求起点 s 到所有顶点的最短距离。允许重边和自环。",
+  "input_format": "首行 n m s，随后 m 行 u v w，表示有向边。1≤n≤100000，0≤m≤200000，0≤w≤10^9。",
+  "output_format": "按顶点编号输出距离，不可达输出 -1。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 4 1\n1 2 2\n1 3 7\n2 3 1\n3 4 3",
+      "output": "0 2 3 6"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 4 1\n1 2 2\n1 3 7\n2 3 1\n3 4 3",
+      "output": "0 2 3 6"
+    },
+    {
+      "input": "1 0 1",
+      "output": "0"
+    },
+    {
+      "input": "3 1 2\n2 3 0",
+      "output": "-1 0 0"
+    },
+    {
+      "input": "3 4 1\n1 2 8\n1 2 2\n2 3 1\n1 3 9",
+      "output": "0 2 3"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1043",
+  "title": "动态连通性",
+  "category": "并查集",
+  "tags": [
+    "路径压缩",
+    "按大小合并"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "维护 n 个元素的集合。U a b 合并 a、b 所在集合；Q a b 查询它们是否属于同一集合。",
+  "input_format": "首行 n q，随后 q 行操作。1≤n,q≤100000，元素编号 1 至 n。",
+  "output_format": "每次查询输出 YES 或 NO。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 4\nU 1 2\nQ 1 2\nQ 1 3\nQ 3 3",
+      "output": "YES\nNO\nYES"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 4\nU 1 2\nQ 1 2\nQ 1 3\nQ 3 3",
+      "output": "YES\nNO\nYES"
+    },
+    {
+      "input": "1 1\nQ 1 1",
+      "output": "YES"
+    },
+    {
+      "input": "3 3\nU 1 2\nU 2 3\nQ 1 3",
+      "output": "YES"
+    },
+    {
+      "input": "2 1\nQ 1 2",
+      "output": "NO"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

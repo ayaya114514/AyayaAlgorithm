@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1018",
+  "title": "最优合并代价",
+  "category": "堆",
+  "tags": [
+    "Huffman",
+    "贪心"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "每次可以选取两个文件合并，代价为二者长度之和；新文件长度等于该和。求将全部文件合为一个文件的最小总代价。",
+  "input_format": "首行 n，次行 n 个非负长度。1≤n≤100000，长度≤10^9。",
+  "output_format": "输出最小总代价。只有一个文件时为 0。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4\n1 2 3 4",
+      "output": "19"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4\n1 2 3 4",
+      "output": "19"
+    },
+    {
+      "input": "1\n1\n",
+      "output": "0"
+    },
+    {
+      "input": "3\n0 0 0\n",
+      "output": "0"
+    },
+    {
+      "input": "2\n7 7\n",
+      "output": "14"
+    },
+    {
+      "input": "8\n1000000000 1000000000 1000000000 1000000000 1000000000 1000000000 1000000000 1000000000\n",
+      "output": "24000000000"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

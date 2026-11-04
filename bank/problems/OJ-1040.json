@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1040",
+  "title": "子集和判定",
+  "category": "搜索与回溯",
+  "tags": [
+    "折半搜索",
+    "DFS"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "从整数数组中选择任意若干元素，判断它们的和能否恰好等于 target。每个下标最多选择一次，允许空集。",
+  "input_format": "首行 n target，次行 n 个整数。0≤n≤24。",
+  "output_format": "可以输出 YES，否则输出 NO。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 9\n3 4 5 7",
+      "output": "YES"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 9\n3 4 5 7",
+      "output": "YES"
+    },
+    {
+      "input": "0 0",
+      "output": "YES"
+    },
+    {
+      "input": "0 1",
+      "output": "NO"
+    },
+    {
+      "input": "3 -2\n-5 3 7",
+      "output": "YES"
+    },
+    {
+      "input": "3 6\n1 1 1",
+      "output": "NO"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1041",
+  "title": "N 皇后方案数",
+  "category": "搜索与回溯",
+  "tags": [
+    "回溯",
+    "位运算"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "在 n×n 棋盘放置 n 个皇后，使任意两个皇后不同行、同列且不在同一条对角线上。求不同布局数。",
+  "input_format": "一个整数 n，1≤n≤11。",
+  "output_format": "输出方案数。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4",
+      "output": "2"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4",
+      "output": "2"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "output": "0"
+    },
+    {
+      "input": "3",
+      "output": "0"
+    },
+    {
+      "input": "5",
+      "output": "10"
+    },
+    {
+      "input": "8",
+      "output": "92"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}

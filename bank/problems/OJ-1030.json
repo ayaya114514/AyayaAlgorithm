@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1030",
+  "title": "最长连续整数段",
+  "category": "哈希与集合",
+  "tags": [
+    "集合",
+    "线性复杂度"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "忽略输入顺序和重复值，求由连续整数构成的最长段长度。例如 1、2、3 构成长为 3 的一段。",
+  "input_format": "首行 n，次行 n 个整数。1≤n≤100000。",
+  "output_format": "输出最长长度。",
+  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "6\n100 4 200 1 3 2",
+      "output": "4"
+    }
+  ],
+  "tests": [
+    {
+      "input": "6\n100 4 200 1 3 2",
+      "output": "4"
+    },
+    {
+      "input": "1\n9\n",
+      "output": "1"
+    },
+    {
+      "input": "4\n1 1 2 2\n",
+      "output": "2"
+    },
+    {
+      "input": "4\n-2 -1 0 2\n",
+      "output": "3"
+    },
+    {
+      "input": "3\n2 4 6\n",
+      "output": "1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+  "editorial": ""
+}
