@@ -12,7 +12,7 @@
   "statement": "维护整数数组。add i x 将第 i 项增加 x；sum l r 查询闭区间和。下标从 1 开始。",
   "input_format": "首行 n q；次行初始数组；随后 q 行操作。1≤n,q≤100000，查询满足 1≤l≤r≤n。",
   "output_format": "每次 sum 输出一行结果。",
-  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
   "samples": [
     {
       "input": "4 3\n1 2 3 4\nsum 1 4\nadd 2 5\nsum 2 3",

@@ -12,7 +12,7 @@
   "statement": "维护一个初始为空的先进先出队列。push x 入队；pop 删除并输出队首；front 仅输出队首。空队上的 pop/front 输出 EMPTY。",
   "input_format": "首行 q，随后 q 行操作，1≤q≤100000。",
   "output_format": "对每次 pop 或 front 操作输出一行结果。",
-  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
   "samples": [
     {
       "input": "5\npush 3\npush 8\nfront\npop\nfront",

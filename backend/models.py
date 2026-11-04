@@ -38,7 +38,10 @@ class Problem(BaseModel):
     def validate_size(self):
         if any(len(tag) > 40 for tag in self.tags):
             raise ValueError("每个标签最多 40 字符")
-        if sum(len(t.input.encode()) + len(t.output.encode()) for t in self.tests) > 1500000:
+        if (
+            sum(len(t.input.encode()) + len(t.output.encode()) for t in self.tests)
+            > 1500000
+        ):
             raise ValueError("测试数据总计不能超过 1.5 MB")
         if self.source_url and not self.source_url.startswith(("https://", "http://")):
             raise ValueError("来源链接必须是 http 或 https URL")

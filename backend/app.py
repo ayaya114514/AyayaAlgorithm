@@ -23,7 +23,14 @@ from .models import Problem, SubmissionRequest
 from .runner import compilers, judge
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_ORIGINS = ["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:4173", "http://localhost:4173", "http://127.0.0.1:8765", "http://localhost:8765"]
+DEFAULT_ORIGINS = [
+    "http://127.0.0.1:5173",
+    "http://localhost:5173",
+    "http://127.0.0.1:4173",
+    "http://localhost:4173",
+    "http://127.0.0.1:8765",
+    "http://localhost:8765",
+]
 
 
 class Store:
@@ -32,8 +39,12 @@ class Store:
         directory.mkdir(parents=True, exist_ok=True)
         self.path = directory / "submissions.sqlite3"
         with self.connect() as connection:
-            connection.execute("CREATE TABLE IF NOT EXISTS submissions (id TEXT PRIMARY KEY, problem_id TEXT, title TEXT, language TEXT, mode TEXT, status TEXT, created_at TEXT, code TEXT, result TEXT)")
-            connection.execute("UPDATE submissions SET status='INTERRUPTED' WHERE status IN ('QUEUED','RUNNING')")
+            connection.execute(
+                "CREATE TABLE IF NOT EXISTS submissions (id TEXT PRIMARY KEY, problem_id TEXT, title TEXT, language TEXT, mode TEXT, status TEXT, created_at TEXT, code TEXT, result TEXT)"
+            )
+            connection.execute(
+                "UPDATE submissions SET status='INTERRUPTED' WHERE status IN ('QUEUED','RUNNING')"
+            )
 
     def connect(self):
         return sqlite3.connect(self.path, timeout=10)
@@ -41,28 +52,62 @@ class Store:
     def create(self, problem, submission):
         identity = uuid.uuid4().hex
         with self.connect() as connection:
-            connection.execute("INSERT INTO submissions VALUES (?,?,?,?,?,?,?,?,?)", (identity, problem.id, problem.title, submission.language, submission.mode, "QUEUED", datetime.now(timezone.utc).isoformat(), submission.code, None))
+            connection.execute(
+                "INSERT INTO submissions VALUES (?,?,?,?,?,?,?,?,?)",
+                (
+                    identity,
+                    problem.id,
+                    problem.title,
+                    submission.language,
+                    submission.mode,
+                    "QUEUED",
+                    datetime.now(timezone.utc).isoformat(),
+                    submission.code,
+                    None,
+                ),
+            )
         return identity
 
     def update(self, identity, status, result=None):
         with self.connect() as connection:
-            connection.execute("UPDATE submissions SET status=?,result=? WHERE id=?", (status, json.dumps(result, ensure_ascii=False) if result else None, identity))
+            connection.execute(
+                "UPDATE submissions SET status=?,result=? WHERE id=?",
+                (
+                    status,
+                    json.dumps(result, ensure_ascii=False) if result else None,
+                    identity,
+                ),
+            )
 
     def rows(self, limit=100, offset=0):
         with self.connect() as connection:
             connection.row_factory = sqlite3.Row
-            rows = connection.execute("SELECT * FROM submissions ORDER BY created_at DESC LIMIT ? OFFSET ?", (limit, offset)).fetchall()
-        return [dict(row) | {"result": json.loads(row["result"]) if row["result"] else None} for row in rows]
+            rows = connection.execute(
+                "SELECT * FROM submissions ORDER BY created_at DESC LIMIT ? OFFSET ?",
+                (limit, offset),
+            ).fetchall()
+        return [
+            dict(row) | {"result": json.loads(row["result"]) if row["result"] else None}
+            for row in rows
+        ]
 
     def get(self, identity):
         with self.connect() as connection:
             connection.row_factory = sqlite3.Row
-            row = connection.execute("SELECT * FROM submissions WHERE id=?", (identity,)).fetchone()
-        return dict(row) | {"result": json.loads(row["result"]) if row["result"] else None} if row else None
+            row = connection.execute(
+                "SELECT * FROM submissions WHERE id=?", (identity,)
+            ).fetchone()
+        return (
+            dict(row) | {"result": json.loads(row["result"]) if row["result"] else None}
+            if row
+            else None
+        )
 
     def progress(self):
         with self.connect() as connection:
-            rows = connection.execute("SELECT problem_id,status FROM submissions WHERE mode='judge' ORDER BY created_at").fetchall()
+            rows = connection.execute(
+                "SELECT problem_id,status FROM submissions WHERE mode='judge' ORDER BY created_at"
+            ).fetchall()
         progress = {}
         for identity, status in rows:
             if progress.get(identity) != "AC":
@@ -73,7 +118,16 @@ class Store:
 def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
     directory = Path(data_dir or os.environ.get("AYAYA_DATA_DIR", ROOT / ".local"))
     bank = Path(bank_dir or ROOT / "bank" / "problems")
-    origins = allowed_origins if allowed_origins is not None else DEFAULT_ORIGINS + [origin.strip().rstrip("/") for origin in os.environ.get("AYAYA_ALLOWED_ORIGINS", "").split(",") if origin.strip()]
+    origins = (
+        allowed_origins
+        if allowed_origins is not None
+        else DEFAULT_ORIGINS
+        + [
+            origin.strip().rstrip("/")
+            for origin in os.environ.get("AYAYA_ALLOWED_ORIGINS", "").split(",")
+            if origin.strip()
+        ]
+    )
 
     @asynccontextmanager
     async def lifespan(application):
@@ -85,12 +139,16 @@ def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
             local_token = token_file.read_text().strip()
         else:
             local_token = secrets.token_urlsafe(32)
-            descriptor = os.open(token_file, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+            descriptor = os.open(
+                token_file, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600
+            )
             with os.fdopen(descriptor, "w") as handle:
                 handle.write(local_token)
         application.state.token = local_token
         application.state.store = Store(directory)
-        application.state.executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="oj")
+        application.state.executor = ThreadPoolExecutor(
+            max_workers=1, thread_name_prefix="oj"
+        )
         application.state.capacity = threading.BoundedSemaphore(12)
         application.state.import_lock = threading.Lock()
         application.state.problems = {}
@@ -105,8 +163,21 @@ def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
         yield
         application.state.executor.shutdown(wait=True, cancel_futures=False)
 
-    application = FastAPI(title="Ayaya OJ Local", version="0.1.0", lifespan=lifespan, docs_url=None, redoc_url=None, openapi_url=None)
-    application.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["GET", "POST", "OPTIONS"], allow_headers=["Authorization", "Content-Type"], max_age=600)
+    application = FastAPI(
+        title="Ayaya OJ Local",
+        version="0.1.0",
+        lifespan=lifespan,
+        docs_url=None,
+        redoc_url=None,
+        openapi_url=None,
+    )
+    application.add_middleware(
+        CORSMiddleware,
+        allow_origins=origins,
+        allow_methods=["GET", "POST", "OPTIONS"],
+        allow_headers=["Authorization", "Content-Type"],
+        max_age=600,
+    )
 
     @application.middleware("http")
     async def guard(request, call_next):
@@ -115,7 +186,12 @@ def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
             return JSONResponse({"detail": "仅接受 localhost 访问"}, status_code=403)
         origin = request.headers.get("origin")
         if origin and origin not in origins:
-            return JSONResponse({"detail": "网站来源未授权；启动时通过 --origin 添加你的 GitHub Pages 域名"}, status_code=403)
+            return JSONResponse(
+                {
+                    "detail": "网站来源未授权；启动时通过 --origin 添加你的 GitHub Pages 域名"
+                },
+                status_code=403,
+            )
         if request.method == "POST":
             size = 0
             chunks = []
@@ -134,15 +210,33 @@ def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
 
     @application.get("/api/health")
     def health():
-        return {"service": "ayaya-oj", "version": "0.1.0", "languages": {key: value is not None for key, value in compilers().items()}, "python": sys.version.split()[0], "strict_memory_limit": sys.platform.startswith("linux"), "execution_mode": "trusted-local", "problem_count": len(application.state.problems)}
+        return {
+            "service": "ayaya-oj",
+            "version": "0.1.0",
+            "languages": {key: value is not None for key, value in compilers().items()},
+            "python": sys.version.split()[0],
+            "strict_memory_limit": sys.platform.startswith("linux"),
+            "execution_mode": "trusted-local",
+            "problem_count": len(application.state.problems),
+        }
 
     @application.get("/api/problems", dependencies=[Depends(authorized)])
     def problems():
-        return {"problems": [problem.public() for problem in application.state.problems.values()], "progress": application.state.store.progress()}
+        return {
+            "problems": [
+                problem.public() for problem in application.state.problems.values()
+            ],
+            "progress": application.state.store.progress(),
+        }
 
     @application.get("/api/submissions", dependencies=[Depends(authorized)])
     def submissions(limit: int = 100, offset: int = 0):
-        return {"submissions": application.state.store.rows(max(1, min(limit, 100)), max(0, offset)), "progress": application.state.store.progress()}
+        return {
+            "submissions": application.state.store.rows(
+                max(1, min(limit, 100)), max(0, offset)
+            ),
+            "progress": application.state.store.progress(),
+        }
 
     @application.get("/api/submissions/{identity}", dependencies=[Depends(authorized)])
     def submission_detail(identity: str):
@@ -158,11 +252,22 @@ def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
             application.state.store.update(identity, result["verdict"], result)
         except Exception:
             logging.exception("Local judging failed")
-            application.state.store.update(identity, "SE", {"verdict": "SE", "score": 0, "message": "本地评测异常，请查看服务日志", "cases": []})
+            application.state.store.update(
+                identity,
+                "SE",
+                {
+                    "verdict": "SE",
+                    "score": 0,
+                    "message": "本地评测异常，请查看服务日志",
+                    "cases": [],
+                },
+            )
         finally:
             application.state.capacity.release()
 
-    @application.post("/api/submissions", status_code=202, dependencies=[Depends(authorized)])
+    @application.post(
+        "/api/submissions", status_code=202, dependencies=[Depends(authorized)]
+    )
     def submit(submission: SubmissionRequest):
         problem = application.state.problems.get(submission.problem_id)
         if not problem:
@@ -177,7 +282,9 @@ def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
             raise
         return {"id": identity, "status": "QUEUED"}
 
-    @application.post("/api/import", status_code=201, dependencies=[Depends(authorized)])
+    @application.post(
+        "/api/import", status_code=201, dependencies=[Depends(authorized)]
+    )
     def import_problem(problem: Problem):
         with application.state.import_lock:
             if problem.id in application.state.problems:
@@ -192,7 +299,9 @@ def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
     # Same-origin mode avoids browser-specific HTTPS -> loopback restrictions.
     dist = ROOT / "dist"
     if (dist / "assets").exists():
-        application.mount("/assets", StaticFiles(directory=dist / "assets"), name="assets")
+        application.mount(
+            "/assets", StaticFiles(directory=dist / "assets"), name="assets"
+        )
     if (dist / "data").exists():
         application.mount("/data", StaticFiles(directory=dist / "data"), name="data")
 
@@ -200,10 +309,21 @@ def create_app(data_dir=None, bank_dir=None, token=None, allowed_origins=None):
     def index():
         if (dist / "index.html").exists():
             return FileResponse(dist / "index.html")
-        return JSONResponse({"service": "Ayaya OJ", "message": "请先运行 npm run build，或访问 http://127.0.0.1:5173"})
+        return JSONResponse(
+            {
+                "service": "Ayaya OJ",
+                "message": "请先运行 npm run build，或访问 http://127.0.0.1:5173",
+            }
+        )
 
     @application.get("/favicon.svg")
     def favicon():
         return FileResponse(ROOT / "public" / "favicon.svg", media_type="image/svg+xml")
+
+    @application.get("/import-example.json")
+    def import_example():
+        return FileResponse(
+            ROOT / "public" / "import-example.json", media_type="application/json"
+        )
 
     return application

@@ -11,7 +11,7 @@
   "statement": "维护初始为空的最小堆。push x 插入；pop 删除并输出最小值；top 输出最小值。堆空时 pop/top 输出 EMPTY。",
   "input_format": "首行 q，随后 q 行操作，1≤q≤100000。",
   "output_format": "每次 pop/top 输出一行。",
-  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
   "samples": [
     {
       "input": "6\npush 4\npush 1\ntop\npop\npop\npop",

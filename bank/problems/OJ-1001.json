@@ -12,7 +12,7 @@
   "statement": "给定两个整数，计算它们的和。",
   "input_format": "一行两个整数 a b。",
   "output_format": "输出 a+b。",
-  "constraints": "具体数据范围见输入格式；累加、乘法与计数结果可能需要 64 位整数。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
   "samples": [
     {
       "input": "3 5\n",
