@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1078",
+  "title": "DAG 最长路径",
+  "category": "图",
+  "tags": [
+    "拓扑排序",
+    "图上 DP"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "在有向无环图中选择一条路径，使边权和最大。允许不经过任何边，此时权重为 0。若输入有环则报告无法处理。",
+  "input_format": "首行 n m，随后 m 行 u v w。1≤n≤100000，0≤m≤200000，|w|≤10^9。",
+  "output_format": "无环时输出最大权重和，有环输出 IMPOSSIBLE。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 4\n1 2 3\n1 3 2\n2 4 5\n3 4 1",
+      "output": "8"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 4\n1 2 3\n1 3 2\n2 4 5\n3 4 1",
+      "output": "8"
+    },
+    {
+      "input": "1 0",
+      "output": "0"
+    },
+    {
+      "input": "2 1\n1 2 -3",
+      "output": "0"
+    },
+    {
+      "input": "2 2\n1 2 1\n2 1 1",
+      "output": "IMPOSSIBLE"
+    },
+    {
+      "input": "3 1\n2 3 9",
+      "output": "9"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

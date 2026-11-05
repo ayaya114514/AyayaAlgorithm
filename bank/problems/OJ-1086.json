@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1086",
+  "title": "带障碍的网格路径",
+  "category": "动态规划",
+  "tags": [
+    "计数 DP",
+    "网格"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "从网格左上角走到右下角，每步只可向右或向下，不能经过障碍。求路径数量对 1000000007 取模。",
+  "input_format": "首行 n m，随后 n 行由 . 与 # 组成的矩阵，. 为可走格。1≤n,m≤1000。",
+  "output_format": "输出路径数；起终点有障碍时为 0。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 3\n...\n.#.\n...",
+      "output": "2"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 3\n...\n.#.\n...",
+      "output": "2"
+    },
+    {
+      "input": "1 1\n.",
+      "output": "1"
+    },
+    {
+      "input": "1 1\n#",
+      "output": "0"
+    },
+    {
+      "input": "2 2\n.#\n#.",
+      "output": "0"
+    },
+    {
+      "input": "1 4\n....",
+      "output": "1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1062",
+  "title": "出栈序列验证",
+  "category": "栈",
+  "tags": [
+    "栈",
+    "模拟"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "整数 1 到 n 按顺序依次入栈，可在任意时刻弹出栈顶。判断指定序列能否成为出栈顺序。",
+  "input_format": "首行 n，次行 1 至 n 的一个排列。1≤n≤100000。",
+  "output_format": "合法输出 YES，否则输出 NO。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "5\n4 5 3 2 1",
+      "output": "YES"
+    }
+  ],
+  "tests": [
+    {
+      "input": "5\n4 5 3 2 1",
+      "output": "YES"
+    },
+    {
+      "input": "1\n1",
+      "output": "YES"
+    },
+    {
+      "input": "3\n3 1 2",
+      "output": "NO"
+    },
+    {
+      "input": "4\n1 2 3 4",
+      "output": "YES"
+    },
+    {
+      "input": "4\n4 3 2 1",
+      "output": "YES"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

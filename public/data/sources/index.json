@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "total": 51258,
+  "sources": [
+    {
+      "schema_version": 1,
+      "source_id": "luogu",
+      "name": "洛谷",
+      "updated_at": "2026-11-04",
+      "source_url": "https://www.luogu.com.cn/problem/list?type=luogu",
+      "metadata_provider": "洛谷官方公开题目列表与标签",
+      "scope": "洛谷主站题库（type=luogu）；不重复收录其远程 OJ 镜像题库",
+      "coverage": {
+        "status": "complete",
+        "expected_total": 17889,
+        "collected": 17889,
+        "note": "已读取该公开目录的所有分页；目录快照可能随原站变动。"
+      },
+      "path": "sources/luogu.json",
+      "scope_short": "洛谷主站",
+      "bytes": 6324116,
+      "revision": "73792ff37d2007e9"
+    },
+    {
+      "schema_version": 1,
+      "source_id": "acwing",
+      "name": "AcWing",
+      "updated_at": "2026-11-04",
+      "source_url": "https://www.acwing.com/problem/",
+      "metadata_provider": "AcWing 公开题目列表",
+      "scope": "公开题库全部分页的题号、标题、来源标签、算法标签、难度和原站链接；付费访问状态未明确标出的条目不作推测。",
+      "coverage": {
+        "status": "complete",
+        "expected_total": 7203,
+        "collected": 7203,
+        "note": "已读取公开题库目录全部 145 页，按页面显示题号去重；未登录，未抓取题面或测试数据。"
+      },
+      "path": "sources/acwing.json",
+      "scope_short": "公开在线题库",
+      "bytes": 2444035,
+      "revision": "bc3073532685832f"
+    },
+    {
+      "schema_version": 1,
+      "source_id": "codeforces",
+      "name": "Codeforces",
+      "updated_at": "2026-11-04",
+      "source_url": "https://codeforces.com/problemset",
+      "metadata_provider": "Codeforces 官方公开 API",
+      "scope": "官方 problemset.problems 主站公开题集接口返回的全部题目；不包含 Gym 或需要权限的题目集。",
+      "coverage": {
+        "status": "complete",
+        "expected_total": 11488,
+        "collected": 11488,
+        "note": "算法标签与 rating 来自官方 API；未返回 rating 的题目标为未评级。这里只保留目录元数据和官方链接。"
+      },
+      "path": "sources/codeforces.json",
+      "scope_short": "主站 Problemset",
+      "bytes": 3997129,
+      "revision": "fbbd7da063b86aef"
+    },
+    {
+      "schema_version": 1,
+      "source_id": "atcoder",
+      "name": "AtCoder",
+      "updated_at": "2026-11-04",
+      "source_url": "https://kenkoooo.com/atcoder/",
+      "metadata_provider": "AtCoder Problems 社区维护数据",
+      "scope": "AtCoder Problems merged-problems 公共数据集当前全部条目；完整是相对此数据集，不保证覆盖 AtCoder 的所有比赛和历史题目。",
+      "coverage": {
+        "status": "complete",
+        "expected_total": 9885,
+        "collected": 9885,
+        "note": "官方作答链接指向 atcoder.jp。rating 是社区模型的原始估计值，非官方难度；分类仅由标题中的明确算法/数据结构名称提供提示，未核对条目保留待分类。"
+      },
+      "path": "sources/atcoder.json",
+      "scope_short": "AtCoder Problems 数据集",
+      "bytes": 3004383,
+      "revision": "b5e2cf15ca1caf48"
+    },
+    {
+      "schema_version": 1,
+      "source_id": "leetcode",
+      "name": "LeetCode",
+      "updated_at": "2026-11-04",
+      "source_url": "https://leetcode.cn/problemset/",
+      "metadata_provider": "力扣中国站官方匿名公开题目目录",
+      "scope": "api/problems/all 匿名接口公开列出的全部目录元数据，包含可公开查看标题的会员题；不收录会员题面、答案或私有测试点。",
+      "coverage": {
+        "status": "complete",
+        "expected_total": 4489,
+        "collected": 4489,
+        "note": "难度和会员标记来自官方公开目录。该目录未提供官方算法标签，因此分类仅作标题提示；未核对条目保留待分类。国际站接口被访问防护拒绝，未尝试绕过；使用正常可访问的中国站公开目录。"
+      },
+      "path": "sources/leetcode.json",
+      "scope_short": "中国站公开目录",
+      "bytes": 1388213,
+      "revision": "d2bfa2bf7bdc393d"
+    },
+    {
+      "schema_version": 1,
+      "source_id": "pat",
+      "name": "PAT",
+      "updated_at": "2026-11-04",
+      "source_url": "https://pintia.cn/problem-sets/dashboard",
+      "metadata_provider": "PTA 官方公开列表；算法分类为本站整理",
+      "scope": "PAT 乙级与甲级公开练习题目集，不含顶级题目集",
+      "scope_short": "乙级 / 甲级",
+      "coverage": {
+        "status": "complete",
+        "expected_total": 304,
+        "collected": 304,
+        "note": "乙级 125 题、甲级 179 题；分类为本站整理提示，不是官方标签。"
+      },
+      "path": "pat.json"
+    }
+  ]
+}

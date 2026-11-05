@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1061",
+  "title": "常数时间最小栈",
+  "category": "栈",
+  "tags": [
+    "辅助栈"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "维护初始为空的栈。push x 入栈；pop 删除并输出栈顶；min 查询最小值。空栈的 pop/min 输出 EMPTY。",
+  "input_format": "首行 q，随后 q 行操作，1≤q≤100000。",
+  "output_format": "每次 pop/min 输出一行。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "6\npush 3\npush 1\nmin\npop\nmin\npop",
+      "output": "1\n1\n3\n3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "6\npush 3\npush 1\nmin\npop\nmin\npop",
+      "output": "1\n1\n3\n3"
+    },
+    {
+      "input": "2\nmin\npop",
+      "output": "EMPTY\nEMPTY"
+    },
+    {
+      "input": "5\npush 1\npush 1\npop\nmin\npop",
+      "output": "1\n1\n1"
+    },
+    {
+      "input": "3\npush -5\nmin\npop",
+      "output": "-5\n-5"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

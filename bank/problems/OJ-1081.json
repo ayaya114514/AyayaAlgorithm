@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1081",
+  "title": "最长公共子序列",
+  "category": "动态规划",
+  "tags": [
+    "LCS",
+    "序列 DP"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "求两个字符串的最长公共子序列长度。子序列保留字符相对顺序，但不要求连续。",
+  "input_format": "两行小写字母串，可以为空，各长度≤1500。",
+  "output_format": "输出最长长度。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "abcde\nace",
+      "output": "3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "abcde\nace",
+      "output": "3"
+    },
+    {
+      "input": "\n",
+      "output": "0"
+    },
+    {
+      "input": "abc\ndef",
+      "output": "0"
+    },
+    {
+      "input": "aaaa\naa",
+      "output": "2"
+    },
+    {
+      "input": "ab\nba",
+      "output": "1"
+    },
+    {
+      "input": "\nabc",
+      "output": "0"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

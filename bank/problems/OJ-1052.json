@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1052",
+  "title": "整数平方根",
+  "category": "排序与查找",
+  "tags": [
+    "二分",
+    "边界"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "求非负整数 n 的平方根向下取整值，结果需要精确，不使用浮点近似作为最终答案。",
+  "input_format": "一个整数 n，0≤n≤10^18。",
+  "output_format": "输出最大的整数 x，使 x²≤n。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "26",
+      "output": "5"
+    }
+  ],
+  "tests": [
+    {
+      "input": "26",
+      "output": "5"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "999999999999999999",
+      "output": "999999999"
+    },
+    {
+      "input": "1000000000000000000",
+      "output": "1000000000"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

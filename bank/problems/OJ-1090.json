@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1090",
+  "title": "Z 函数",
+  "category": "字符串",
+  "tags": [
+    "扩展 KMP",
+    "字符串匹配"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "对字符串 s 的每个位置 i，求后缀 s[i:] 与整个 s 的最长公共前缀长度。约定 Z[0]=字符串长度。",
+  "input_format": "一行非空小写字母串，长度≤100000。",
+  "output_format": "输出各位置的 Z 值，位置从 0 开始。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "ababa",
+      "output": "5 0 3 0 1"
+    }
+  ],
+  "tests": [
+    {
+      "input": "ababa",
+      "output": "5 0 3 0 1"
+    },
+    {
+      "input": "a",
+      "output": "1"
+    },
+    {
+      "input": "aaaa",
+      "output": "4 3 2 1"
+    },
+    {
+      "input": "abcde",
+      "output": "5 0 0 0 0"
+    },
+    {
+      "input": "aabcaabxaaaz",
+      "output": "12 1 0 0 3 1 0 0 2 2 1 0"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

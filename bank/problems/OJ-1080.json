@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1080",
+  "title": "字符串编辑距离",
+  "category": "动态规划",
+  "tags": [
+    "编辑距离",
+    "滚动数组"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "把字符串 a 变为 b，每次可插入、删除或替换一个字符，每次代价为 1，求最小代价。",
+  "input_format": "两行仅含小写字母的字符串，可以为空，各长度≤1500。",
+  "output_format": "输出最小编辑次数。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "kitten\nsitting",
+      "output": "3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "kitten\nsitting",
+      "output": "3"
+    },
+    {
+      "input": "\n",
+      "output": "0"
+    },
+    {
+      "input": "a\n",
+      "output": "1"
+    },
+    {
+      "input": "\nabc",
+      "output": "3"
+    },
+    {
+      "input": "abc\nabc",
+      "output": "0"
+    },
+    {
+      "input": "ab\nba",
+      "output": "2"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

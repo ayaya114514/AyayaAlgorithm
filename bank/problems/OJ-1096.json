@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1096",
+  "title": "Nim 游戏胜负",
+  "category": "数学与数论",
+  "tags": [
+    "Nim",
+    "异或",
+    "博弈"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "有若干堆石子，两人轮流从任意一堆中取走至少一个石子，不能行动的人输。双方最优策略，判断先手胜负。",
+  "input_format": "首行 n，次行 n 个非负堆大小。1≤n≤100000，堆大小≤10^9。",
+  "output_format": "先手必胜输出 FIRST，否则输出 SECOND。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3\n1 2 3",
+      "output": "SECOND"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3\n1 2 3",
+      "output": "SECOND"
+    },
+    {
+      "input": "1\n0\n",
+      "output": "SECOND"
+    },
+    {
+      "input": "1\n1\n",
+      "output": "FIRST"
+    },
+    {
+      "input": "2\n5 5\n",
+      "output": "SECOND"
+    },
+    {
+      "input": "3\n1 2 4\n",
+      "output": "FIRST"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

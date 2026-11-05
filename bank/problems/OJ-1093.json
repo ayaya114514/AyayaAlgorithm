@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1093",
+  "title": "组合数取模",
+  "category": "数学与数论",
+  "tags": [
+    "组合数学",
+    "逆元"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "计算从 n 个不同元素中选 k 个的方案数，对质数 1000000007 取模。k>n 时答案为 0。",
+  "input_format": "一行 n k，0≤n,k≤100000。",
+  "output_format": "输出 C(n,k) 取模结果。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "5 2",
+      "output": "10"
+    }
+  ],
+  "tests": [
+    {
+      "input": "5 2",
+      "output": "10"
+    },
+    {
+      "input": "0 0",
+      "output": "1"
+    },
+    {
+      "input": "3 5",
+      "output": "0"
+    },
+    {
+      "input": "100000 0",
+      "output": "1"
+    },
+    {
+      "input": "10 5",
+      "output": "252"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

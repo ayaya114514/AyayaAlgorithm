@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1067",
+  "title": "验证 BST 后序遍历",
+  "category": "树",
+  "tags": [
+    "BST",
+    "单调栈"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "判断互不相同的整数序列是否可能是某棵二叉搜索树的后序遍历。BST 左子树的值严格小于根，右子树严格大于根。",
+  "input_format": "首行 n，次行 n 个互异整数。0≤n≤100000。",
+  "output_format": "可能输出 YES，否则输出 NO。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "5\n1 3 2 6 5",
+      "output": "YES"
+    }
+  ],
+  "tests": [
+    {
+      "input": "5\n1 3 2 6 5",
+      "output": "YES"
+    },
+    {
+      "input": "0",
+      "output": "YES"
+    },
+    {
+      "input": "1\n7",
+      "output": "YES"
+    },
+    {
+      "input": "4\n7 4 6 5",
+      "output": "NO"
+    },
+    {
+      "input": "4\n1 2 3 4",
+      "output": "YES"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

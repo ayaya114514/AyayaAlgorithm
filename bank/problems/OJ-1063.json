@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1063",
+  "title": "链表的中间结点",
+  "category": "链表",
+  "tags": [
+    "快慢指针"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "找出从 head 可达链中的中间结点值。链长为偶数时选后一个中间结点。",
+  "input_format": "首行 n head，随后 n 行 id value next。id 为 0 至 n-1，-1 为空，链无环，0≤n≤100000，可能有不可达结点。",
+  "output_format": "输出中间值，空链输出 NONE。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 0\n0 1 1\n1 2 2\n2 3 3\n3 4 -1\n",
+      "output": "3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 0\n0 1 1\n1 2 2\n2 3 3\n3 4 -1\n",
+      "output": "3"
+    },
+    {
+      "input": "0 -1\n",
+      "output": "NONE"
+    },
+    {
+      "input": "1 0\n0 9 -1\n",
+      "output": "9"
+    },
+    {
+      "input": "3 0\n0 1 1\n1 2 2\n2 3 -1\n",
+      "output": "2"
+    },
+    {
+      "input": "2 0\n0 4 1\n1 4 -1\n",
+      "output": "4"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

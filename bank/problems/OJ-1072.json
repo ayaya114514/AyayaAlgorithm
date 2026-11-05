@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1072",
+  "title": "限制边数的最短路",
+  "category": "图",
+  "tags": [
+    "Bellman-Ford",
+    "负权边"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "在有向图上，求从 1 到 n 至多经过 k 条边的最短距离。边权可以为负，允许重复经过顶点和边。",
+  "input_format": "首行 n m k，随后 m 行 u v w。1≤n≤300，0≤m≤3000，0≤k≤300，|w|≤10000。",
+  "output_format": "输出最短距离，不可达输出 IMPOSSIBLE。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 3 1\n1 2 1\n2 3 1\n1 3 8",
+      "output": "8"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 3 1\n1 2 1\n2 3 1\n1 3 8",
+      "output": "8"
+    },
+    {
+      "input": "1 0 0",
+      "output": "0"
+    },
+    {
+      "input": "2 1 0\n1 2 3",
+      "output": "IMPOSSIBLE"
+    },
+    {
+      "input": "3 2 2\n1 2 -5\n2 3 1",
+      "output": "-4"
+    },
+    {
+      "input": "2 2 3\n1 1 -1\n1 2 5",
+      "output": "3"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

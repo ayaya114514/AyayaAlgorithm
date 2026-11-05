@@ -3,9 +3,12 @@
 一个 PTA 风格的个人算法练习平台。GitHub Pages 托管前端，自己的 Mac 负责 C、C++、Python 本地判题，不需要 VPS。
 
 - 网站：<https://ayaya114514.github.io/AyayaAlgorithm/>
-- 51 道可本地判题的原创经典练习，17 个算法分类、250 个自建测试点。
+- 101 道可本地判题的原创经典练习，17 个算法分类、492 个自建测试点。
+- 多平台索引：51,258 条公开元数据，支持平台、算法、原站难度、会员标记筛选和题号/标题搜索，按平台加载。
 - PAT 官方索引：乙级 125 题、甲级 179 题（2026-11-04 快照）。仅包含题号、标题、分数、官方链接；216 条有本站分类提示，其余保留待分类。
 - 分类筛选、题号导航、难度/状态筛选、CodeMirror 编辑器、草稿自动保存、源码上传和下载。
+- 默认纯黑背景 dark mode，可在右上角切换浅色；选择保存在当前浏览器中，编辑器与页面同步切换。
+- C、C++、Python 编辑器初始均为空白，不预填任何头文件、main 或注释。保留自己写的草稿；仅迁移旧版未改动的自动模板。“清空代码”可重新从零开始。
 - 样例运行、自定义输入、正式评测、分测试点结果、部分得分和 SQLite 提交历史。
 - JSON 题目导入，预留 `schema_version`；第一版只实现完整程序的编程题。
 
@@ -46,7 +49,38 @@ python scripts/start.py --origin https://ayaya114514.github.io
 
 分类包括：入门与模拟、数组与双指针、链表、栈、队列、堆、树、图、排序与查找、哈希与集合、字符串、动态规划、贪心、搜索与回溯、并查集、数学与数论、区间数据结构。
 
-内置经典题为原创题面和自建测试数据，并非 PAT 原题或官方判题数据。PAT 列表从[官方公开目录](https://pintia.cn/problem-sets/dashboard)整理，点击后跳转 PTA。分类是本站学习提示，不是官方标签。没有声称已收录全部经典题或大学试卷；这是可以继续补充的第一批题库。
+内置经典题为原创题面和自建测试数据，并非原平台题面或官方判题数据。索引题目在原站作答；“同类本地练习”按算法关联，不保证输入格式与原题相同，也不代表官方评测通过。
+
+### 多平台收录范围
+
+以下为 2026-11-04 公开目录快照，按来源计数，跨平台同题不做全局去重。
+
+| 来源 | 条目数 | 范围与来源 |
+| --- | ---: | --- |
+| 洛谷 | 17,889 | 官方主站 type=luogu 的全部 358 页；不重复抓取远程 OJ 镜像列表 |
+| AcWing | 7,203 | 官方公开题库全部 145 页，保留显示题号与真实 content URL 的对应关系 |
+| Codeforces | 11,488 | 官方 problemset API 全部返回记录，不含 Gym |
+| AtCoder | 9,885 | AtCoder Problems 社区维护数据集全部条目；作答链接指向 AtCoder 官方站 |
+| LeetCode | 4,489 | 中国站匿名公开目录，包括 789 条已公开标题的会员题；会员题面和答案不收录 |
+| PAT | 304 | 乙级 125、甲级 179；保留原索引 |
+
+每个平台的完整性仅针对上述明确范围，不代表所有历史比赛、私有题库或已删除题目。元数据包含题号、标题、原站链接、已公开标签和难度；不包含题面、答案或测试数据。题库索引无需启动本地服务。
+
+洛谷、AcWing、Codeforces 的公开算法标签映射到本站分类；未公开完整标签的 AtCoder、LeetCode 条目仅在题名有明确提示时分类，其余保留待分类。PAT 分类仍为本站整理。AtCoder rating 来自社区估计，可能为负；不同平台难度不直接比较。会员状态不明确的条目不推测为免费。
+
+### 手动更新索引
+
+```sh
+conda activate ai_env
+python scripts/sync_catalogs.py
+python scripts/sync_catalogs.py --source luogu --source acwing --refresh
+python scripts/build_sources.py
+npm run build
+```
+
+默认重用 `.local/catalog-cache/` 成功缓存；`--refresh` 才向原站重新请求。请求按平台限速，遇到 403/429 或列表结构变化停止，已有完整快照不会因本次失败被覆盖。缓存重建保留实际获取日期，不把旧数据伪装成当天更新。PAT 保留原快照，未由上述命令刷新。
+
+索引来源：[洛谷](https://www.luogu.com.cn/problem/list?type=luogu)、[AcWing](https://www.acwing.com/problem/)、[Codeforces API](https://codeforces.com/apiHelp/methods#problemset.problems)、[AtCoder Problems 数据文档](https://github.com/kenkoooo/AtCoderProblems/blob/main/doc/api.md)、[LeetCode 中国站](https://leetcode.cn/problemset/)、[PAT](https://pintia.cn/problem-sets/dashboard)。
 
 ### 导入题目
 
@@ -128,7 +162,7 @@ npm test
 npm run build
 ```
 
-后端测试实际编译 C、C++，运行全部 51 个 Python 参考程序，检查 AC / WA / CE / RE / TLE / OLE、请求鉴权、来源限制、导入校验、记录持久化、样例不计通过、已有 AC 不被 WA 覆盖。前端测试覆盖筛选、来源链接、HTML 转义和 loopback 地址限制。
+后端测试实际编译 C、C++，运行全部 101 个 Python 参考程序，检查 AC / WA / CE / RE / TLE / OLE、请求鉴权、来源限制、导入校验、记录持久化、样例不计通过、已有 AC 不被 WA 覆盖。新增独立算法核对：线段树对照直接数组操作、最大流对照枚举最小割、SCC 对照可达关系、LCA 对照祖先链。索引测试覆盖数量、唯一 ID、公开字段、来源和 AcWing 错位编号；前端测试覆盖多标签、会员状态、分页、PAT 兼容和原有安全处理。
 
 ## GitHub Pages 部署
 

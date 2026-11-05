@@ -1065,6 +1065,11 @@ return ' '.join(map(str,out))
 )
 
 
+from more_problems import register
+
+register(add, sequence, chain)
+
+
 def build():
     problem_dir = ROOT / "bank" / "problems"
     reference_dir = ROOT / "bank" / "references"
@@ -1112,7 +1117,7 @@ def build():
             comparator="tokens",
             source="经典算法 · 原创练习",
             source_url="",
-            provenance="经典算法思想的原创题面与自建测试数据；非 PAT 原题或官方评测数据。",
+            provenance="经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
             editorial="",
         )
         (problem_dir / f"{identity}.json").write_text(

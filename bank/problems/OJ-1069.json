@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1069",
+  "title": "树上最大权独立集",
+  "category": "动态规划",
+  "tags": [
+    "树形 DP",
+    "独立集"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "树上每个顶点有一个权重，选择若干顶点，使相邻顶点不能同时被选，求最大权重和。允许空集。",
+  "input_format": "首行 n，次行 n 个权重，随后 n-1 行无向边。1≤n≤100000，权重可为负。",
+  "output_format": "输出最大总权重。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3\n5 10 6\n1 2\n2 3",
+      "output": "11"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3\n5 10 6\n1 2\n2 3",
+      "output": "11"
+    },
+    {
+      "input": "1\n-9",
+      "output": "0"
+    },
+    {
+      "input": "1\n7",
+      "output": "7"
+    },
+    {
+      "input": "3\n-1 -2 -3\n1 2\n1 3",
+      "output": "0"
+    },
+    {
+      "input": "4\n1 1 1 1\n1 2\n1 3\n1 4",
+      "output": "3"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

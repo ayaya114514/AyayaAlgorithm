@@ -28,6 +28,9 @@ import {
   Terminal,
   RefreshCw,
   CircleHelp,
+  Sun,
+  Moon,
+  Eraser,
 } from "lucide";
 import {
   escapeHtml as e,
@@ -38,6 +41,9 @@ import {
   verdicts,
 } from "./core.js";
 import "./style.css";
+import { createExternalView } from "./external-view.js";
+import { restoreDraft } from "./drafts.js";
+import { editorAppearance } from "./theme.js";
 
 const iconSet = {
   Code,
@@ -64,6 +70,9 @@ const iconSet = {
   Terminal,
   RefreshCw,
   CircleHelp,
+  Sun,
+  Moon,
+  Eraser,
 };
 const app = document.querySelector("#app");
 const modal = document.querySelector("#modal");
@@ -84,9 +93,13 @@ const save = (storage, key, value) => {
   }
 };
 const state = {
+  theme:
+    read(localStorage, "ayaya.theme", "dark") === "light" ? "light" : "dark",
   builtin: [],
   problems: [],
   pat: [],
+  sources: [],
+  sourceTotal: 0,
   categories: [],
   updated: "",
   category: "",
@@ -107,13 +120,8 @@ const state = {
   currentProblem: null,
 };
 const languageConfig = new Compartment();
+const editorThemeConfig = new Compartment();
 const languages = { c: "C11", cpp: "C++17", python: "Python 3" };
-const templates = {
-  c: "#include <stdio.h>\n\nint main(void) {\n    // 在这里编写你的程序\n    return 0;\n}\n",
-  cpp: "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    ios::sync_with_stdio(false);\n    cin.tie(nullptr);\n    // 在这里编写你的程序\n    return 0;\n}\n",
-  python:
-    'import sys\n\n\ndef main():\n    data = sys.stdin.read()\n    # 在这里编写你的程序\n\n\nif __name__ == "__main__":\n    main()\n',
-};
 const icon = (name) => `<i data-lucide="${name}" aria-hidden="true"></i>`;
 const icons = () =>
   createIcons({ icons: iconSet, attrs: { "stroke-width": 1.7 } });
@@ -138,10 +146,28 @@ function go(path) {
   if (route() === path) render();
   else location.hash = path;
 }
+function applyTheme() {
+  document.documentElement.dataset.theme = state.theme;
+  document.querySelector('meta[name="theme-color"]').content =
+    state.theme === "dark" ? "#000000" : "#ffffff";
+  const button = document.querySelector('[data-action="toggle-theme"]');
+  if (button) {
+    const label = state.theme === "dark" ? "切换浅色模式" : "切换纯黑模式";
+    button.innerHTML = icon(state.theme === "dark" ? "sun" : "moon");
+    button.setAttribute("aria-label", label);
+    button.title = label;
+    icons();
+  }
+  if (state.editor)
+    state.editor.dispatch({
+      effects: editorThemeConfig.reconfigure(editorAppearance(state.theme)),
+    });
+}
 function connectionButton() {
   return `<span class="status-dot ${state.connected ? "online" : ""}"></span>${state.connected ? "本地判题已连接" : "连接本地判题"}`;
 }
 function sidebar() {
+  if (route().startsWith("/catalog")) return externalView.sidebar();
   const list = filterProblems(state.problems, { category: state.category });
   const structure = [
     "链表",
@@ -166,7 +192,6 @@ function sidebar() {
       categories().filter((c) => !structure.includes(c)),
     )}</div>
     <div class="number-section"><div class="sidebar-heading"><strong>${e(state.category || "快速选题")}</strong><small>题号导航</small></div><div class="number-grid">${list
-      .slice(0, 60)
       .map(
         (p) =>
           `<a class="number ${state.progress[p.id] === "AC" ? "accepted" : state.progress[p.id] ? "attempted" : ""} ${state.currentProblem?.id === p.id ? "current" : ""}" href="#/problem/${encodeURIComponent(p.id)}" title="${e(p.id + " " + p.title)}">${e(p.id.replace("OJ-", ""))}</a>`,
@@ -175,8 +200,8 @@ function sidebar() {
     <div class="sidebar-footer"><span class="legend"><b class="online"></b> 已通过</span><span class="legend"><b class="tried"></b> 已尝试</span><span class="legend"><b></b> 未作答</span></div>`;
 }
 function shell(content, { problem = false } = {}) {
-  app.innerHTML = `<header class="topbar"><a class="brand" href="#/problems"><span class="brand-symbol">A<span>›</span></span><strong>Ayaya <b>OJ</b></strong></a><span class="brand-caption">个人算法练习平台</span><nav class="topnav" aria-label="主导航"><a class="${route().startsWith("/problem") ? "active" : ""}" href="#/problems">题目集</a><a class="${route() === "/pat" ? "active" : ""}" href="#/pat">PAT 官方索引</a><a class="${route() === "/submissions" ? "active" : ""}" href="#/submissions">提交记录</a></nav><div class="top-actions"><button class="connect-button" data-action="connect">${connectionButton()}</button><button class="icon-button" data-action="help" aria-label="使用说明">${icon("circle-help")}</button><span class="avatar" title="个人练习空间">A</span></div></header>
-    <div class="workspace ${problem ? "problem-workspace" : ""}"><nav class="rail" aria-label="快捷导航"><a class="${route().startsWith("/problem") ? "active" : ""}" href="#/problems" title="题目集">${icon("book-open")}<span>题库</span></a><a class="${route() === "/pat" ? "active" : ""}" href="#/pat" title="PAT 官方索引">${icon("layers")}<span>PAT</span></a><a class="${route() === "/submissions" ? "active" : ""}" href="#/submissions" title="提交记录">${icon("list")}<span>记录</span></a><a class="${route() === "/import" ? "active" : ""}" href="#/import" title="导入题目">${icon("upload")}<span>导入</span></a><button data-action="connect" title="连接设置">${icon("settings")}<span>设置</span></button></nav><aside class="sidebar" id="sidebar">${sidebar()}</aside><main id="main" class="main ${problem ? "problem-main" : ""}">${content}</main></div>`;
+  app.innerHTML = `<header class="topbar"><a class="brand" href="#/problems"><span class="brand-symbol">A<span>›</span></span><strong>Ayaya <b>OJ</b></strong></a><span class="brand-caption">个人算法练习平台</span><nav class="topnav" aria-label="主导航"><a class="${route().startsWith("/problem") ? "active" : ""}" href="#/problems">题目集</a><a class="${route().startsWith("/catalog") || route() === "/pat" ? "active" : ""}" href="#/catalog/luogu">题库索引</a><a class="${route() === "/submissions" ? "active" : ""}" href="#/submissions">提交记录</a></nav><div class="top-actions"><button class="connect-button" data-action="connect">${connectionButton()}</button><button class="icon-button theme-toggle" data-action="toggle-theme" aria-label="${state.theme === "dark" ? "切换浅色模式" : "切换纯黑模式"}" title="${state.theme === "dark" ? "切换浅色模式" : "切换纯黑模式"}">${icon(state.theme === "dark" ? "sun" : "moon")}</button><button class="icon-button" data-action="help" aria-label="使用说明">${icon("circle-help")}</button><span class="avatar" title="个人练习空间">A</span></div></header>
+    <div class="workspace ${problem ? "problem-workspace" : ""}"><nav class="rail" aria-label="快捷导航"><a class="${route().startsWith("/problem") ? "active" : ""}" href="#/problems" title="题目集">${icon("book-open")}<span>题库</span></a><a class="${route().startsWith("/catalog") || route() === "/pat" ? "active" : ""}" href="#/catalog/luogu" title="多平台题库索引">${icon("layers")}<span>索引</span></a><a class="${route() === "/submissions" ? "active" : ""}" href="#/submissions" title="提交记录">${icon("list")}<span>记录</span></a><a class="${route() === "/import" ? "active" : ""}" href="#/import" title="导入题目">${icon("upload")}<span>导入</span></a><button data-action="connect" title="连接设置">${icon("settings")}<span>设置</span></button></nav><aside class="sidebar" id="sidebar">${sidebar()}</aside><main id="main" class="main ${problem ? "problem-main" : ""}">${content}</main></div>`;
   icons();
 }
 function footer() {
@@ -185,7 +210,7 @@ function footer() {
 function renderLibrary() {
   shell(`<div class="breadcrumb">题目集 ${icon("chevron-right")} <span>${e(state.category || "经典算法练习")}</span></div><div class="page-heading"><div><div class="eyebrow">ALGORITHM PRACTICE</div><h1>${e(state.category || "经典算法练习")}</h1><p>从基础数据结构到经典算法，按知识点逐题练习。</p></div><a href="#/import" class="button secondary">${icon("upload")} 导入题目</a></div>
     <div class="summary-strip"><span><strong>${state.problems.length}</strong> 道可判题练习</span><span><strong>${categories().length}</strong> 个算法分类</span><span><strong class="green">${solved(state.problems)}</strong> 道已通过</span><span class="summary-note">${state.connected ? "进度已与本地服务同步" : "连接本地服务后可提交评测"}</span></div>
-    <section class="panel"><div class="panel-tabs"><button class="tab active" data-action="library">编程题 <small>${state.problems.length}</small></button><a class="tab" href="#/pat">PAT 乙级 / 甲级 <small>${state.pat.length}</small>${icon("external-link")}</a></div><div class="filters"><label class="search-field">${icon("search")}<input id="search" type="search" placeholder="搜索题号、标题或算法标签" value="${e(state.query)}" aria-label="搜索题目"></label><select id="difficulty" aria-label="筛选难度"><option value="">全部难度</option>${["入门", "基础", "进阶"].map((d) => `<option ${state.difficulty === d ? "selected" : ""}>${d}</option>`).join("")}</select><select id="status" aria-label="筛选作答状态">${[
+    <section class="panel"><div class="panel-tabs"><button class="tab active" data-action="library">编程题 <small>${state.problems.length}</small></button><a class="tab" href="#/catalog/luogu">多平台题库 <small>${state.sourceTotal.toLocaleString("zh-CN")}</small>${icon("external-link")}</a></div><div class="filters"><label class="search-field">${icon("search")}<input id="search" type="search" placeholder="搜索题号、标题或算法标签" value="${e(state.query)}" aria-label="搜索题目"></label><select id="difficulty" aria-label="筛选难度"><option value="">全部难度</option>${["入门", "基础", "进阶"].map((d) => `<option ${state.difficulty === d ? "selected" : ""}>${d}</option>`).join("")}</select><select id="status" aria-label="筛选作答状态">${[
       ["", "全部状态"],
       ["untried", "未作答"],
       ["tried", "已尝试"],
@@ -197,7 +222,7 @@ function renderLibrary() {
       )
       .join(
         "",
-      )}</select><button class="text-button" data-action="reset">重置</button></div><div id="table-results"></div></section><div class="source-note">${icon("info")} 经典练习为原创题面与自建测试数据；PAT 题目通过官方索引访问。</div>${footer()}`);
+      )}</select><button class="text-button" data-action="reset">重置</button></div><div id="table-results"></div></section><div class="source-note">${icon("info")} 本地练习为原创题面与自建测试；洛谷、AcWing、PAT 等题目通过题库索引访问。</div>${footer()}`);
   renderTable();
   document.querySelector("#search").addEventListener("input", (ev) => {
     state.query = ev.target.value;
@@ -306,13 +331,11 @@ function renderProblem(identity) {
       )
       .join(
         "",
-      )}</select></label><div><button class="icon-button" data-action="upload-code" aria-label="上传源码" title="上传源码">${icon("upload")}</button><button class="icon-button" data-action="download-code" aria-label="下载源码" title="下载源码">${icon("download")}</button><button class="icon-button" data-action="reset-code" aria-label="恢复模板" title="恢复模板">${icon("refresh-cw")}</button></div></div><div id="editor" aria-label="源代码编辑器"></div><div class="editor-status"><span id="draft-status">代码自动保存在当前浏览器</span><span id="language-hint"></span></div><details class="custom-input"><summary>自定义输入</summary><textarea id="stdin" aria-label="自定义测试输入" placeholder="在这里输入测试数据"></textarea><button class="button secondary" data-action="run-custom">${icon("play")} 运行自定义输入</button></details><div class="submission-actions"><button class="button secondary" data-action="run-sample">${icon("play")} 运行样例</button><button class="button primary" data-action="judge">${icon("send")} 提交评测</button></div><div id="result" class="result-panel" aria-live="polite"><div class="result-placeholder">${icon("terminal")}<strong>等待提交</strong><p>运行样例检查输入输出，提交评测检验全部本地测试点。</p></div></div><div class="runtime-note">本机耗时仅供参考；macOS 不提供严格内存判定。代码以你的本机权限执行，仅提交自己信任的程序。</div></section></div>`,
+      )}</select></label><div><button class="icon-button" data-action="upload-code" aria-label="上传源码" title="上传源码">${icon("upload")}</button><button class="icon-button" data-action="download-code" aria-label="下载源码" title="下载源码">${icon("download")}</button><button class="icon-button" data-action="clear-code" aria-label="清空代码" title="清空代码">${icon("eraser")}</button></div></div><div id="editor" aria-label="源代码编辑器"></div><div class="editor-status"><span id="draft-status">代码自动保存在当前浏览器</span><span id="language-hint"></span></div><details class="custom-input"><summary>自定义输入</summary><textarea id="stdin" aria-label="自定义测试输入" placeholder="在这里输入测试数据"></textarea><button class="button secondary" data-action="run-custom">${icon("play")} 运行自定义输入</button></details><div class="submission-actions"><button class="button secondary" data-action="run-sample">${icon("play")} 运行样例</button><button class="button primary" data-action="judge">${icon("send")} 提交评测</button></div><div id="result" class="result-panel" aria-live="polite"><div class="result-placeholder">${icon("terminal")}<strong>等待提交</strong><p>运行样例检查输入输出，提交评测检验全部本地测试点。</p></div></div><div class="runtime-note">本机耗时仅供参考；macOS 不提供严格内存判定。代码以你的本机权限执行，仅提交自己信任的程序。</div></section></div>`,
     { problem: true },
   );
-  const draft = read(
-    localStorage,
-    `ayaya.draft.${p.id}.${state.language}`,
-    templates[state.language],
+  const draft = restoreDraft(
+    read(localStorage, `ayaya.draft.${p.id}.${state.language}`, ""),
   );
   state.editor = new EditorView({
     doc: draft,
@@ -328,20 +351,7 @@ function renderProblem(identity) {
             update.state.doc.toString(),
           );
       }),
-      EditorView.theme({
-        "&": { height: "100%", fontSize: "13px" },
-        ".cm-scroller": {
-          fontFamily: '"SFMono-Regular",Consolas,"Liberation Mono",monospace',
-        },
-        ".cm-content": { padding: "18px 0" },
-        ".cm-gutters": {
-          backgroundColor: "#fafbfc",
-          borderRight: "1px solid #f0f1f3",
-          color: "#a2aab6",
-        },
-        ".cm-activeLine": { backgroundColor: "#f4f8ff" },
-        "&.cm-focused": { outline: "none" },
-      }),
+      editorThemeConfig.of(editorAppearance(state.theme)),
     ],
     parent: document.querySelector("#editor"),
   });
@@ -362,10 +372,8 @@ function languageHint() {
 function changeLanguage(value) {
   state.language = value;
   save(localStorage, "ayaya.language", value);
-  const content = read(
-    localStorage,
-    `ayaya.draft.${state.currentProblem.id}.${value}`,
-    templates[value],
+  const content = restoreDraft(
+    read(localStorage, `ayaya.draft.${state.currentProblem.id}.${value}`, ""),
   );
   state.editor.dispatch({
     effects: languageConfig.reconfigure(value === "python" ? python() : cpp()),
@@ -570,13 +578,17 @@ function render() {
   state.currentProblem = null;
   document.title =
     "Ayaya OJ · " +
-    (route() === "/pat"
-      ? "PAT 官方索引"
-      : route() === "/submissions"
-        ? "提交记录"
-        : "算法练习");
+    (route().startsWith("/catalog")
+      ? "多平台题库索引"
+      : route() === "/pat"
+        ? "PAT 官方索引"
+        : route() === "/submissions"
+          ? "提交记录"
+          : "算法练习");
   if (route().startsWith("/problem/"))
     renderProblem(decodeURIComponent(route().slice(9)));
+  else if (route().startsWith("/catalog"))
+    externalView.render(route().split("/")[2] || "luogu");
   else if (route() === "/pat") renderPat();
   else if (route() === "/submissions") renderHistory();
   else if (route() === "/import") renderImport();
@@ -620,7 +632,11 @@ document.addEventListener("click", async (ev) => {
   } else if (action === "library") go("/problems");
   else if (action === "connect") openConnection();
   else if (action === "close-modal") modal.close();
-  else if (action === "help") showHelp();
+  else if (action === "toggle-theme") {
+    state.theme = state.theme === "dark" ? "light" : "dark";
+    save(localStorage, "ayaya.theme", state.theme);
+    applyTheme();
+  } else if (action === "help") showHelp();
   else if (action === "pat-level") {
     state.level = value;
     state.page = 1;
@@ -691,13 +707,16 @@ document.addEventListener("click", async (ev) => {
         "." +
         { c: "c", cpp: "cpp", python: "py" }[state.language],
     );
-  else if (action === "reset-code") {
-    if (confirm("恢复当前语言的初始模板？已有源码将被替换。"))
+  else if (action === "clear-code") {
+    if (
+      state.editor.state.doc.length &&
+      confirm("清空当前代码？本题当前语言的草稿也会被清空。")
+    )
       state.editor.dispatch({
         changes: {
           from: 0,
           to: state.editor.state.doc.length,
-          insert: templates[state.language],
+          insert: "",
         },
       });
   } else if (action === "refresh-history") {
@@ -781,7 +800,7 @@ modal.addEventListener("click", (ev) => {
 });
 async function start() {
   try {
-    const [catalog, pat] = await Promise.all([
+    const [catalog, pat, sources] = await Promise.all([
       fetch(DATA + "data/catalog.json").then((r) => {
         if (!r.ok) throw Error("题库读取失败");
         return r.json();
@@ -790,7 +809,13 @@ async function start() {
         if (!r.ok) throw Error("PAT 索引读取失败");
         return r.json();
       }),
+      fetch(DATA + "data/sources/index.json").then((r) => {
+        if (!r.ok) throw Error("多平台目录读取失败");
+        return r.json();
+      }),
     ]);
+    state.sources = sources.sources;
+    state.sourceTotal = sources.total;
     state.builtin = catalog.problems;
     state.problems = catalog.problems;
     state.categories = catalog.categories;
@@ -806,4 +831,16 @@ async function start() {
     app.innerHTML = `<div class="startup-error"><h1>题库暂时无法加载</h1><p>${e(error.message)}</p><button onclick="location.reload()">重新加载</button></div>`;
   }
 }
+const externalView = createExternalView({
+  state,
+  DATA,
+  icon,
+  e,
+  safeUrl,
+  icons,
+  shell,
+  footer,
+  go,
+});
+applyTheme();
 start();

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1084",
+  "title": "分组背包",
+  "category": "动态规划",
+  "tags": [
+    "分组背包"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "物品分为若干组，每组最多选一件，总重量不超过 W，求最大价值。",
+  "input_format": "首行 groups W。每组先一行 k，随后 k 行 weight value。1≤groups≤100，0≤W≤3000，总物品数≤1000，重量为正，价值非负。",
+  "output_format": "输出最大价值。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "2 5\n2\n2 3\n3 4\n1\n2 5",
+      "output": "9"
+    }
+  ],
+  "tests": [
+    {
+      "input": "2 5\n2\n2 3\n3 4\n1\n2 5",
+      "output": "9"
+    },
+    {
+      "input": "1 5\n2\n2 3\n3 4",
+      "output": "4"
+    },
+    {
+      "input": "1 0\n1\n1 9",
+      "output": "0"
+    },
+    {
+      "input": "2 2\n0\n1\n2 8",
+      "output": "8"
+    },
+    {
+      "input": "1 9\n0",
+      "output": "0"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

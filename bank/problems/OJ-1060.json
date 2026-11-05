@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1060",
+  "title": "字典树计数",
+  "category": "字符串",
+  "tags": [
+    "Trie",
+    "前缀树"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "维护字符串多重集合。I s 插入一次，Q s 查询完整字符串出现次数，P s 查询以 s 为前缀的字符串个数。",
+  "input_format": "首行 q，随后 q 行操作。字符串为非空小写字母串，总长度≤300000，1≤q≤100000。",
+  "output_format": "每次 Q/P 操作输出一行。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "6\nI app\nI apple\nI app\nQ app\nP app\nQ apple",
+      "output": "2\n3\n1"
+    }
+  ],
+  "tests": [
+    {
+      "input": "6\nI app\nI apple\nI app\nQ app\nP app\nQ apple",
+      "output": "2\n3\n1"
+    },
+    {
+      "input": "2\nQ a\nP a",
+      "output": "0\n0"
+    },
+    {
+      "input": "4\nI a\nI aa\nQ a\nP a",
+      "output": "1\n2"
+    },
+    {
+      "input": "3\nI zoo\nP z\nQ zo",
+      "output": "1\n0"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

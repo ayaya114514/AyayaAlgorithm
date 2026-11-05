@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1087",
+  "title": "相邻石子合并",
+  "category": "动态规划",
+  "tags": [
+    "区间 DP"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "一排石子，每次只能合并相邻两堆，代价为其石子数之和。求最终合成一堆的最小总代价。",
+  "input_format": "首行 n，次行 n 个非负堆大小，1≤n≤200，堆大小≤10^6。",
+  "output_format": "输出最小总代价。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3\n1 2 3",
+      "output": "9"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3\n1 2 3",
+      "output": "9"
+    },
+    {
+      "input": "1\n5\n",
+      "output": "0"
+    },
+    {
+      "input": "3\n0 0 0\n",
+      "output": "0"
+    },
+    {
+      "input": "4\n4 1 1 4\n",
+      "output": "18"
+    },
+    {
+      "input": "4\n2 2 2 2\n",
+      "output": "16"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1089",
+  "title": "最长回文子串长度",
+  "category": "字符串",
+  "tags": [
+    "回文",
+    "中心扩展"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "求一个字符串中最长的连续回文片段的长度，区分大小写。",
+  "input_format": "一行英文字母或数字串，长度 0 至 2000。",
+  "output_format": "输出最长长度，空串返回 0。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "babad",
+      "output": "3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "babad",
+      "output": "3"
+    },
+    {
+      "input": "",
+      "output": "0"
+    },
+    {
+      "input": "a",
+      "output": "1"
+    },
+    {
+      "input": "cbbd",
+      "output": "2"
+    },
+    {
+      "input": "aaaaa",
+      "output": "5"
+    },
+    {
+      "input": "abC",
+      "output": "1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

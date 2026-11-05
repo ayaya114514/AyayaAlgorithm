@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1099",
+  "title": "和为目标值的子数组",
+  "category": "哈希与集合",
+  "tags": [
+    "前缀和",
+    "哈希计数"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "统计数组中元素和恰好为 target 的非空连续子数组个数。元素可以为负或零。",
+  "input_format": "首行 n target，次行 n 个整数。1≤n≤100000。",
+  "output_format": "输出子数组个数，结果使用 64 位整数。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 2\n1 1 1",
+      "output": "2"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 2\n1 1 1",
+      "output": "2"
+    },
+    {
+      "input": "1 0\n0",
+      "output": "1"
+    },
+    {
+      "input": "3 0\n0 0 0",
+      "output": "6"
+    },
+    {
+      "input": "3 0\n1 -1 1",
+      "output": "2"
+    },
+    {
+      "input": "3 5\n1 2 3",
+      "output": "1"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

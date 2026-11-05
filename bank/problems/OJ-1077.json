@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1077",
+  "title": "01 边权最短路",
+  "category": "图",
+  "tags": [
+    "0-1 BFS",
+    "双端队列"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "有向图每条边权为 0 或 1，求源点 s 到所有顶点的最短距离。",
+  "input_format": "首行 n m s，随后 m 行 u v w。1≤n≤100000，0≤m≤200000，w∈{0,1}。",
+  "output_format": "按编号输出最短距离，不可达为 -1。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 4 1\n1 2 1\n1 3 0\n3 2 0\n2 4 1",
+      "output": "0 0 0 1"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 4 1\n1 2 1\n1 3 0\n3 2 0\n2 4 1",
+      "output": "0 0 0 1"
+    },
+    {
+      "input": "1 0 1",
+      "output": "0"
+    },
+    {
+      "input": "3 1 2\n2 3 1",
+      "output": "-1 0 1"
+    },
+    {
+      "input": "2 2 1\n1 2 0\n2 1 0",
+      "output": "0 0"
+    },
+    {
+      "input": "3 3 1\n1 3 1\n1 2 0\n2 3 0",
+      "output": "0 0 0"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

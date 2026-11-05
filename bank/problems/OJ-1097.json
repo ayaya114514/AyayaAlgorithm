@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1097",
+  "title": "合并集合与集合大小",
+  "category": "并查集",
+  "tags": [
+    "并查集",
+    "按大小合并"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "维护 n 个元素。U a b 合并两个元素的集合，S a 查询 a 所在集合的元素个数。",
+  "input_format": "首行 n q，随后 q 行操作。1≤n,q≤100000，元素编号为 1 至 n。",
+  "output_format": "每次 S 输出一行集合大小。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 4\nU 1 2\nS 1\nU 2 3\nS 3",
+      "output": "2\n3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 4\nU 1 2\nS 1\nU 2 3\nS 3",
+      "output": "2\n3"
+    },
+    {
+      "input": "1 1\nS 1",
+      "output": "1"
+    },
+    {
+      "input": "2 3\nU 1 1\nS 1\nS 2",
+      "output": "1\n1"
+    },
+    {
+      "input": "3 4\nU 1 2\nU 1 2\nU 2 3\nS 1",
+      "output": "3"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

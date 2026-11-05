@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1075",
+  "title": "二分图判定",
+  "category": "图",
+  "tags": [
+    "染色法",
+    "BFS"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "判断无向图能否将所有顶点分为两组，使每条边的端点分属两组。允许重边与自环。",
+  "input_format": "首行 n m，随后 m 行 u v，1≤n≤100000，0≤m≤200000。",
+  "output_format": "可以输出 YES，否则输出 NO。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 4\n1 2\n2 3\n3 4\n4 1",
+      "output": "YES"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 4\n1 2\n2 3\n3 4\n4 1",
+      "output": "YES"
+    },
+    {
+      "input": "1 0",
+      "output": "YES"
+    },
+    {
+      "input": "1 1\n1 1",
+      "output": "NO"
+    },
+    {
+      "input": "3 3\n1 2\n2 3\n3 1",
+      "output": "NO"
+    },
+    {
+      "input": "4 1\n3 4",
+      "output": "YES"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

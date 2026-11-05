@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1066",
+  "title": "树的直径",
+  "category": "树",
+  "tags": [
+    "树",
+    "两次 BFS"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "树的直径是任意两个顶点间路径上最多的边数。求无向无权树的直径。",
+  "input_format": "首行 n，随后 n-1 行无向边 u v。1≤n≤100000，编号 1 至 n，保证是一棵树。",
+  "output_format": "输出直径的边数。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "5\n1 2\n2 3\n2 4\n4 5",
+      "output": "3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "5\n1 2\n2 3\n2 4\n4 5",
+      "output": "3"
+    },
+    {
+      "input": "1",
+      "output": "0"
+    },
+    {
+      "input": "2\n1 2",
+      "output": "1"
+    },
+    {
+      "input": "4\n1 2\n1 3\n1 4",
+      "output": "2"
+    },
+    {
+      "input": "4\n1 2\n2 3\n3 4",
+      "output": "3"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

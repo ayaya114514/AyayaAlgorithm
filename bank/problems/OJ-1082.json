@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1082",
+  "title": "完全背包",
+  "category": "动态规划",
+  "tags": [
+    "背包",
+    "完全背包"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "每种物品可以选择任意多件，总重量不能超过 W，求最大价值。",
+  "input_format": "首行 n W，随后 n 行 weight value。1≤n≤100，0≤W≤10000，重量为正，价值非负。",
+  "output_format": "输出最大价值。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "2 7\n2 3\n3 5",
+      "output": "11"
+    }
+  ],
+  "tests": [
+    {
+      "input": "2 7\n2 3\n3 5",
+      "output": "11"
+    },
+    {
+      "input": "1 0\n2 3",
+      "output": "0"
+    },
+    {
+      "input": "1 6\n2 3",
+      "output": "9"
+    },
+    {
+      "input": "2 1\n2 9\n3 10",
+      "output": "0"
+    },
+    {
+      "input": "2 5\n1 0\n2 4",
+      "output": "8"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

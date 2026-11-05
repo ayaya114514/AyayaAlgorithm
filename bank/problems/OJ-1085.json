@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1085",
+  "title": "最少硬币数",
+  "category": "动态规划",
+  "tags": [
+    "完全背包",
+    "最优子结构"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "给定若干种正整数面额，每种硬币数量无限。求恰好凑出目标金额的最少硬币数。",
+  "input_format": "首行 n target，次行 n 种面额。1≤n≤100，0≤target≤10000，面额为正。",
+  "output_format": "输出最少个数，无法凑出输出 -1。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 11\n1 2 5",
+      "output": "3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 11\n1 2 5",
+      "output": "3"
+    },
+    {
+      "input": "1 0\n7",
+      "output": "0"
+    },
+    {
+      "input": "1 3\n2",
+      "output": "-1"
+    },
+    {
+      "input": "3 6\n1 3 4",
+      "output": "2"
+    },
+    {
+      "input": "2 7\n2 3",
+      "output": "3"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

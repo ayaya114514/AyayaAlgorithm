@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1100",
+  "title": "最长有效括号片段",
+  "category": "栈",
+  "tags": [
+    "栈",
+    "括号"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "字符串只包含左右圆括号，求最长的正确匹配连续片段长度。",
+  "input_format": "一行括号串，长度 0 至 100000。",
+  "output_format": "输出最长长度。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": ")()())",
+      "output": "4"
+    }
+  ],
+  "tests": [
+    {
+      "input": ")()())",
+      "output": "4"
+    },
+    {
+      "input": "",
+      "output": "0"
+    },
+    {
+      "input": "((",
+      "output": "0"
+    },
+    {
+      "input": "()()",
+      "output": "4"
+    },
+    {
+      "input": "(()())",
+      "output": "6"
+    },
+    {
+      "input": ")(",
+      "output": "0"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

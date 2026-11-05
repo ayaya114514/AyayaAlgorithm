@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1095",
+  "title": "质因数分解",
+  "category": "数学与数论",
+  "tags": [
+    "试除法",
+    "分解质因数"
+  ],
+  "difficulty": "基础",
+  "score": 20,
+  "statement": "把正整数 n 分解成质数幂的乘积，按质因数从小到大输出。",
+  "input_format": "一个整数 n，1≤n≤10^12。",
+  "output_format": "每行输出质因数及指数。n=1 时输出 NONE。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "360",
+      "output": "2 3\n3 2\n5 1"
+    }
+  ],
+  "tests": [
+    {
+      "input": "360",
+      "output": "2 3\n3 2\n5 1"
+    },
+    {
+      "input": "1",
+      "output": "NONE"
+    },
+    {
+      "input": "2",
+      "output": "2 1"
+    },
+    {
+      "input": "999983",
+      "output": "999983 1"
+    },
+    {
+      "input": "1000000000000",
+      "output": "2 12\n5 12"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

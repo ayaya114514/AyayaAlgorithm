@@ -209,9 +209,9 @@ def test_local_browser_can_download_import_template_without_auth(client):
 
 def test_public_catalog_has_real_complete_entries_and_no_reference_answers():
     catalog = json.loads((ROOT / "public/data/catalog.json").read_text())
-    assert len(catalog["problems"]) == 51
+    assert len(catalog["problems"]) == 101
     assert len(catalog["categories"]) == 17
-    assert len({p["id"] for p in catalog["problems"]}) == 51
+    assert len({p["id"] for p in catalog["problems"]}) == 101
     assert all(
         p["samples"] and p["test_count"] >= 4 and "tests" not in p
         for p in catalog["problems"]

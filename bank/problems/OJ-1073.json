@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1073",
+  "title": "检测负权环",
+  "category": "图",
+  "tags": [
+    "Bellman-Ford",
+    "负环"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "判断有向带权图中是否存在总权重严格小于零的环，环可以在任意连通分量。",
+  "input_format": "首行 n m，随后 m 行 u v w。1≤n≤200，0≤m≤2000，|w|≤10000。",
+  "output_format": "存在负环输出 YES，否则输出 NO。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "3 3\n1 2 1\n2 3 -3\n3 1 1",
+      "output": "YES"
+    }
+  ],
+  "tests": [
+    {
+      "input": "3 3\n1 2 1\n2 3 -3\n3 1 1",
+      "output": "YES"
+    },
+    {
+      "input": "1 0",
+      "output": "NO"
+    },
+    {
+      "input": "1 1\n1 1 -1",
+      "output": "YES"
+    },
+    {
+      "input": "3 2\n2 3 -2\n3 2 1",
+      "output": "YES"
+    },
+    {
+      "input": "2 2\n1 2 -1\n2 1 1",
+      "output": "NO"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}

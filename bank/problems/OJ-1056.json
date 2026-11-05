@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "OJ-1056",
+  "title": "单点赋值与区间最大值",
+  "category": "区间数据结构",
+  "tags": [
+    "线段树",
+    "RMQ"
+  ],
+  "difficulty": "进阶",
+  "score": 25,
+  "statement": "维护数组。set i x 把第 i 项改为 x；max l r 查询闭区间最大值。",
+  "input_format": "首行 n q，次行初始数组，随后 q 行操作。1≤n,q≤100000，下标从 1 开始，查询合法。",
+  "output_format": "每次 max 操作输出一行。",
+  "constraints": "未另行指定时，整数输入在 32 位有符号范围内。累加、乘法与计数结果可能需要 64 位整数。",
+  "samples": [
+    {
+      "input": "4 3\n1 7 3 4\nmax 1 4\nset 2 -2\nmax 1 3",
+      "output": "7\n3"
+    }
+  ],
+  "tests": [
+    {
+      "input": "4 3\n1 7 3 4\nmax 1 4\nset 2 -2\nmax 1 3",
+      "output": "7\n3"
+    },
+    {
+      "input": "1 2\n-5\nmax 1 1\nset 1 0",
+      "output": "-5"
+    },
+    {
+      "input": "3 2\n-9 -4 -7\nmax 1 3\nmax 3 3",
+      "output": "-4\n-7"
+    },
+    {
+      "input": "2 3\n1 2\nset 1 9\nmax 1 2\nmax 2 2",
+      "output": "9\n2"
+    }
+  ],
+  "time_limit_ms": 2000,
+  "memory_limit_mb": 256,
+  "comparator": "tokens",
+  "source": "经典算法 · 原创练习",
+  "source_url": "",
+  "provenance": "经典算法思想的原创题面与自建测试数据；非原站题面或官方评测数据。",
+  "editorial": ""
+}
