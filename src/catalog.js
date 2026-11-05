@@ -13,6 +13,19 @@ export function normalizePat(pat) {
   }));
 }
 
+export function difficultyChoice(problem) {
+  if (problem.source === "atcoder" && Number.isFinite(problem.rating)) {
+    const start = Math.floor(problem.rating / 400) * 400;
+    const band =
+      start < 400 ? "<400" : start >= 3200 ? "3200+" : `${start}–${start + 399}`;
+    return { key: `atcoder|rating:${band}`, label: `估计 ${band}` };
+  }
+  return {
+    key: `${problem.source}|${problem.difficulty}`,
+    label: problem.difficulty,
+  };
+}
+
 export function filterExternalProblems(
   problems,
   { query = "", category = "", difficulty = "", access = "" } = {},
@@ -26,7 +39,7 @@ export function filterExternalProblems(
             p.categories.includes("待分类") ||
             p.category === "待分类"
           : (p.categories || [p.category]).includes(category))) &&
-      (!difficulty || `${p.source}|${p.difficulty}` === difficulty) &&
+      (!difficulty || difficultyChoice(p).key === difficulty) &&
       (!access || (access === "paid" ? p.paid === true : p.paid === false)) &&
       words.every((word) =>
         (

@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { restoreDraft } from "../src/drafts.js";
 import {
+  difficultyChoice,
   filterExternalProblems,
   normalizePat,
   paginationNumbers,
@@ -95,6 +96,26 @@ test("external categories search all tags and keep unknown access distinct from 
     "LC-1",
   );
 });
+test("AtCoder difficulty bands preserve boundaries and separate unrated problems", () => {
+  const rated = (rating) => ({
+    source: "atcoder", rating, difficulty: `估计 ${rating}`, categories: [],
+  });
+  const problems = [-200, 399, 400, 799, 800, 3199, 3200, 4500].map(rated);
+  problems.push({ source: "atcoder", rating: null, difficulty: "未评级" });
+  problems.push({ source: "codeforces", rating: 400, difficulty: "400" });
+  assert.deepEqual(
+    filterExternalProblems(problems, { difficulty: difficultyChoice(rated(400)).key }).map((p) => p.rating),
+    [400, 799],
+  );
+  assert.deepEqual(
+    filterExternalProblems(problems, { difficulty: difficultyChoice(rated(-200)).key }).map((p) => p.rating),
+    [-200, 399],
+  );
+  assert.equal(filterExternalProblems(problems, { difficulty: "atcoder|rating:3200+" }).length, 2);
+  assert.equal(filterExternalProblems(problems, { difficulty: "atcoder|未评级" }).length, 1);
+  assert.equal(new Set(Array.from({ length: 7000 }, (_, i) => difficultyChoice(rated(i - 1500)).key)).size, 9);
+});
+
 test("pagination stays bounded for tens of thousands of indexed problems", () => {
   const pages = paginationNumbers(450, 1200);
   assert.ok(pages.length <= 9);
