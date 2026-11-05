@@ -18,47 +18,46 @@ const darkHighlight = HighlightStyle.define([
   { tag: [tags.operator, tags.punctuation, tags.bracket], color: "#bcbcbc" },
 ]);
 
-export function editorAppearance(theme) {
-  const dark = theme === "dark";
+export function editorAppearance() {
   return [
     EditorView.theme(
       {
         "&": {
           height: "100%",
           fontSize: "13px",
-          backgroundColor: dark ? "#000000" : "#ffffff",
-          color: dark ? "#dddddd" : "#323843",
+          backgroundColor: "#000000",
+          color: "#dddddd",
         },
         ".cm-scroller": {
           fontFamily: '"SFMono-Regular",Consolas,"Liberation Mono",monospace',
         },
         ".cm-content": {
           padding: "18px 0",
-          caretColor: dark ? "#ffffff" : "#222222",
+          caretColor: "#ffffff",
         },
         ".cm-cursor, .cm-dropCursor": {
-          borderLeftColor: dark ? "#ffffff" : "#222222",
+          borderLeftColor: "#ffffff",
         },
         ".cm-gutters": {
-          backgroundColor: dark ? "#000000" : "#fafbfc",
-          borderRight: dark ? "1px solid #242424" : "1px solid #f0f1f3",
-          color: dark ? "#6c6c6c" : "#a2aab6",
+          backgroundColor: "#000000",
+          borderRight: "1px solid #242424",
+          color: "#6c6c6c",
         },
         ".cm-activeLine, .cm-activeLineGutter": {
-          backgroundColor: dark ? "#101010" : "#f4f8ff",
+          backgroundColor: "#101010",
         },
         ".cm-selectionBackground, &.cm-focused .cm-selectionBackground": {
-          backgroundColor: dark ? "#18395d" : "#cce1ff",
+          backgroundColor: "#18395d",
         },
         ".cm-tooltip": {
-          backgroundColor: dark ? "#000000" : "#ffffff",
-          color: dark ? "#dddddd" : "#323843",
-          border: dark ? "1px solid #333333" : "1px solid #e9ecf0",
+          backgroundColor: "#000000",
+          color: "#dddddd",
+          border: "1px solid #333333",
         },
         "&.cm-focused": { outline: "none" },
       },
-      { dark },
+      { dark: true },
     ),
-    ...(dark ? [syntaxHighlighting(darkHighlight)] : []),
+    syntaxHighlighting(darkHighlight),
   ];
 }

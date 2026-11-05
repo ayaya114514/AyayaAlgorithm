@@ -7,9 +7,6 @@ html[data-theme="dark"] {
   --muted: #969696;
   --green: #55cca0;
 }
-html[data-theme="light"] {
-  color-scheme: light;
-}
 html[data-theme="dark"] body {
   background: #000;
   color: #d4d4d4;
@@ -340,8 +337,4 @@ html[data-theme="dark"] .form-error {
 html[data-theme="dark"] .spinner {
   border-color: #273444;
   border-top-color: #7cb4ff;
-}
-.top-actions > .theme-toggle {
-  display: inline-flex !important;
-  min-width: 28px;
 }

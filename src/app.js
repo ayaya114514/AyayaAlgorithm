@@ -23,8 +23,6 @@ import {
   X,
   RefreshCw,
   CircleHelp,
-  Sun,
-  Moon,
   Eraser,
 } from "lucide";
 import {
@@ -61,8 +59,6 @@ const iconSet = {
   X,
   RefreshCw,
   CircleHelp,
-  Sun,
-  Moon,
   Eraser,
 };
 const app = document.querySelector("#app");
@@ -84,8 +80,6 @@ const save = (storage, key, value) => {
   }
 };
 const state = {
-  theme:
-    read(localStorage, "ayaya.theme", "dark") === "light" ? "light" : "dark",
   builtin: [],
   problems: [],
   pat: [],
@@ -108,7 +102,6 @@ const state = {
   currentProblem: null,
 };
 const languageConfig = new Compartment();
-const editorThemeConfig = new Compartment();
 const languages = { c: "C11", cpp: "C++17", python: "Python 3" };
 const icon = (name) => `<i data-lucide="${name}" aria-hidden="true"></i>`;
 const icons = () =>
@@ -133,23 +126,6 @@ function toast(message) {
 function go(path) {
   if (route() === path) render();
   else location.hash = path;
-}
-function applyTheme() {
-  document.documentElement.dataset.theme = state.theme;
-  document.querySelector('meta[name="theme-color"]').content =
-    state.theme === "dark" ? "#000000" : "#ffffff";
-  const button = document.querySelector('[data-action="toggle-theme"]');
-  if (button) {
-    const label = state.theme === "dark" ? "切换浅色模式" : "切换纯黑模式";
-    button.innerHTML = icon(state.theme === "dark" ? "sun" : "moon");
-    button.setAttribute("aria-label", label);
-    button.title = label;
-    icons();
-  }
-  if (state.editor)
-    state.editor.dispatch({
-      effects: editorThemeConfig.reconfigure(editorAppearance(state.theme)),
-    });
 }
 function connectionButton() {
   return `<span class="status-dot ${state.connected ? "online" : ""}"></span>${state.connected ? "判题已连接" : "连接判题"}`;
@@ -179,7 +155,7 @@ function sidebar() {
     )}</div>`;
 }
 function shell(content, { problem = false, library = false } = {}) {
-  app.innerHTML = `<header class="topbar"><a class="brand" href="#/problems"><span class="brand-symbol">A<span>›</span></span><strong>Ayaya <b>OJ</b></strong></a><nav class="topnav" aria-label="主导航"><a class="${route().startsWith("/problem") ? "active" : ""}" href="#/problems">练习</a><a class="${route().startsWith("/catalog") || route() === "/pat" ? "active" : ""}" href="#/catalog/luogu">题库索引</a><a class="${route() === "/submissions" ? "active" : ""}" href="#/submissions">提交记录</a><a class="${route() === "/import" ? "active" : ""}" href="#/import">导入</a></nav><div class="top-actions"><button class="connect-button" data-action="connect">${connectionButton()}</button><button class="icon-button theme-toggle" data-action="toggle-theme" aria-label="${state.theme === "dark" ? "切换浅色模式" : "切换纯黑模式"}" title="${state.theme === "dark" ? "切换浅色模式" : "切换纯黑模式"}">${icon(state.theme === "dark" ? "sun" : "moon")}</button><button class="icon-button" data-action="help" aria-label="使用说明" title="使用说明">${icon("circle-help")}</button></div></header>
+  app.innerHTML = `<header class="topbar"><a class="brand" href="#/problems"><span class="brand-symbol">A<span>›</span></span><strong>Ayaya <b>OJ</b></strong></a><nav class="topnav" aria-label="主导航"><a class="${route().startsWith("/problem") ? "active" : ""}" href="#/problems">练习</a><a class="${route().startsWith("/catalog") || route() === "/pat" ? "active" : ""}" href="#/catalog/luogu">题库索引</a><a class="${route() === "/submissions" ? "active" : ""}" href="#/submissions">提交记录</a><a class="${route() === "/import" ? "active" : ""}" href="#/import">导入</a></nav><div class="top-actions"><button class="connect-button" data-action="connect">${connectionButton()}</button><button class="icon-button" data-action="help" aria-label="使用说明" title="使用说明">${icon("circle-help")}</button></div></header>
     <div class="workspace ${problem ? "problem-workspace" : library ? "library-workspace" : "single-workspace"}">${library ? `<aside class="sidebar" id="sidebar" aria-label="算法分类">${sidebar()}</aside>` : ""}<main id="main" class="main ${problem ? "problem-main" : ""}">${content}</main></div>`;
   icons();
 }
@@ -277,7 +253,7 @@ function renderProblem(identity) {
             update.state.doc.toString(),
           );
       }),
-      editorThemeConfig.of(editorAppearance(state.theme)),
+      editorAppearance(),
     ],
     parent: document.querySelector("#editor"),
   });
@@ -560,11 +536,7 @@ document.addEventListener("click", async (ev) => {
   } else if (action === "library") go("/problems");
   else if (action === "connect") openConnection();
   else if (action === "close-modal") modal.close();
-  else if (action === "toggle-theme") {
-    state.theme = state.theme === "dark" ? "light" : "dark";
-    save(localStorage, "ayaya.theme", state.theme);
-    applyTheme();
-  } else if (action === "help") showHelp();
+  else if (action === "help") showHelp();
   else if (action === "copy-sample") {
     try {
       await navigator.clipboard.writeText(
@@ -754,5 +726,4 @@ const externalView = createExternalView({
   shell,
   go,
 });
-applyTheme();
 start();
